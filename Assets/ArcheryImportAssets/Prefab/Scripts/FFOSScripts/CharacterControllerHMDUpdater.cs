@@ -12,7 +12,7 @@ public class CharacterControllerHMDUpdater : MonoBehaviour
     private XROrigin _xrRig;
     private CharacterController _characterController;
     private CharacterControllerDriver _driver;
-    // Start is called before the first frame update
+
     void Start()
     {
         _xrRig = GetComponent<XROrigin>();
@@ -21,7 +21,7 @@ public class CharacterControllerHMDUpdater : MonoBehaviour
 
 
     }
-    // Update is called once per frame
+
     void Update()
     {
        UpdateCharacterController();
