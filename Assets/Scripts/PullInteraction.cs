@@ -17,18 +17,22 @@ public class PullInteraction : XRBaseInteractable
     //Line Renderer for the BowString
     private LineRenderer _lineRenderer;
     //Determines when the BowString is being pulled (Determines which hand)
-    private IXRSelectInteractor pullingInteractor = null;
+    private IXRSelectInteractor _pullingInteractor = null;
+
+    //Audio
+    private AudioSource _audioSource;
 
     protected override void Awake()
     {
         base.Awake();
         _lineRenderer = GetComponent<LineRenderer>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     //Is called on in OnSelectEntered
     public void SetPullInteractor(SelectEnterEventArgs args)
     {
-        pullingInteractor = args.interactorObject;
+        _pullingInteractor = args.interactorObject;
     }
 
     //Release of the BowString
@@ -37,10 +41,12 @@ public class PullInteraction : XRBaseInteractable
     public void Release()
     {
         PullActionReleased?.Invoke(pullAmount);
-        pullingInteractor = null;
+        _pullingInteractor = null;
         pullAmount = 0f; //Set to 0 because the BowString is no longer being pulled on
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.y, 0f);
         UpdateString();
+
+        PlayReleaseAudio();
     }
 
     //Is called from the XR Interaction manager
@@ -52,16 +58,17 @@ public class PullInteraction : XRBaseInteractable
         {
             if (isSelected) //Double checks if the interaction is selected
             {
-                Vector3 pullPosition = pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
+                Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
 
                 UpdateString();
+
             }
         }
     }
 
     //Math Stuff to calculate the values of pulling the BowString
-    private float CalculatePull(Vector3 pullPosition)
+    private float CalculatePull(Vector3 pullPosition) //May be where I determine the Force Amount 
     {
         Vector3 pullDirection = pullPosition - start.position;
         Vector3 targetDirection = end.position - start.position;
@@ -81,4 +88,16 @@ public class PullInteraction : XRBaseInteractable
         _lineRenderer.SetPosition(1, linePosition);
     }
 
+    private void HapticFeedback()
+    {
+        if (_pullingInteractor != null)
+        {
+            ActionBasedController currentController = _pullingInteractor.transform.gameObject.GetComponent<ActionBasedController>();
+            currentController.SendHapticImpulse(pullAmount, 0.1f);
+        }
+    }
+    private void PlayReleaseAudio()
+    {
+        _audioSource.Play();
+    }
 }
