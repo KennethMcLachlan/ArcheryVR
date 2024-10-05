@@ -11,12 +11,21 @@ public class Arrow : MonoBehaviour
     private bool _inAir;
     private Vector3 _lastPosition = Vector3.zero;
 
+    //VFX
+    private ParticleSystem _particleSystem;
+    private TrailRenderer _trailRenderer;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
         PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
 
-        StopPhysics();
+        //VFX
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
+        _trailRenderer = GetComponentInChildren<TrailRenderer>();
+
+        PullInteraction.PullActionReleased += Release;
+        StopFunctions();
     }
 
     private void OnDestroy()
@@ -36,7 +45,11 @@ public class Arrow : MonoBehaviour
 
         StartCoroutine(RotateWithVelocity());
 
-        _lastPosition = tip.position; 
+        _lastPosition = tip.position;
+
+        //VFX
+        _particleSystem.Play();
+        _trailRenderer.emitting = true;
     }
 
     private IEnumerator RotateWithVelocity() // Allows the arrow to rotate in unison with projection
@@ -73,15 +86,19 @@ public class Arrow : MonoBehaviour
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
                     body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
                 }
-                StopPhysics();
+                StopFunctions();
             }
         }
     }
 
-    private void StopPhysics()
+    private void StopFunctions()
     {
         _inAir = false;
         SetPhysics(false);
+
+        //VFX
+        _particleSystem.Stop();
+        _trailRenderer.emitting = false;
     }
 
     private void SetPhysics(bool usePhysics)
