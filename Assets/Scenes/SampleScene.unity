@@ -3974,7 +3974,7 @@ GameObject:
   - component: {fileID: 115412960}
   - component: {fileID: 115412959}
   - component: {fileID: 115412964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Left Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6502,6 +6502,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 151460207}
+    - targetCorrespondingSourceObject: {fileID: 3701202431252008202, guid: 1b6d9920203cf204ca025db14635a195,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 151460214}
     - targetCorrespondingSourceObject: {fileID: 1934756542582598774, guid: 1b6d9920203cf204ca025db14635a195,
         type: 3}
       insertIndex: -1
@@ -6732,6 +6736,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 151460203}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &151460214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151460204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba0e251f175d75647bdfeebba38c9531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 1769337597633466025, guid: 54ba44d4ecd83324991be29cf49b127d, type: 3}
+  notch: {fileID: 773359283}
 --- !u!1001 &157503662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33805,7 +33823,7 @@ GameObject:
   - component: {fileID: 715288852}
   - component: {fileID: 715288851}
   - component: {fileID: 715288853}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35876,6 +35894,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772237388}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &773359283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 74269883, guid: 1b6d9920203cf204ca025db14635a195,
+    type: 3}
+  m_PrefabInstance: {fileID: 151460203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &778095760
 GameObject:
   m_ObjectHideFlags: 0
@@ -36992,7 +37016,7 @@ GameObject:
   - component: {fileID: 799937025}
   - component: {fileID: 799937027}
   - component: {fileID: 799937026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DirectInteractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67848,7 +67872,7 @@ GameObject:
   - component: {fileID: 1537049985}
   - component: {fileID: 1537049984}
   - component: {fileID: 1537049989}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Right Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91990,7 +92014,7 @@ GameObject:
   - component: {fileID: 2088548693}
   - component: {fileID: 2088548694}
   - component: {fileID: 2088548695}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DirectInteractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
