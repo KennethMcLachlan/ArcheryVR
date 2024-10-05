@@ -29,7 +29,8 @@ public class ArrowSpawner : MonoBehaviour
         if (_bow.isSelected && _arrowNotched == false)
         {
             _arrowNotched = true;
-            StartCoroutine(DelayedSpawn());
+            //Instantiate(arrow, notch.transform);
+            //StartCoroutine(DelayedSpawn());
         }
         if (!_bow.isSelected && _currentArrow != null)
         {
@@ -50,4 +51,8 @@ public class ArrowSpawner : MonoBehaviour
         _currentArrow = Instantiate(arrow, notch.transform);
     }
 
+    public void InstantiateArrow()
+    {
+        _currentArrow = Instantiate(arrow, notch.transform);
+    }
 }

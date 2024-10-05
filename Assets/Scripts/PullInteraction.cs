@@ -19,6 +19,8 @@ public class PullInteraction : XRBaseInteractable
     //Determines when the BowString is being pulled (Determines which hand)
     private IXRSelectInteractor _pullingInteractor = null;
 
+    private ArrowSpawner _arrowSpawner;
+
     //Audio
     private AudioSource _audioSource;
 
@@ -29,6 +31,10 @@ public class PullInteraction : XRBaseInteractable
         _audioSource = GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+        _arrowSpawner = GameObject.Find("Bow").GetComponent<ArrowSpawner>();
+    }
     //Is called on in OnSelectEntered
     public void SetPullInteractor(SelectEnterEventArgs args)
     {
@@ -58,6 +64,7 @@ public class PullInteraction : XRBaseInteractable
         {
             if (isSelected) //Double checks if the interaction is selected
             {
+                _arrowSpawner.InstantiateArrow();
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
 
