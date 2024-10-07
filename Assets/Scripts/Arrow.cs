@@ -16,6 +16,7 @@ public class Arrow : MonoBehaviour
     private TrailRenderer _trailRenderer;
 
     private float _forceValue;
+    public TargetBehavior _targetBehavior;
 
     private void Awake()
     {
@@ -95,6 +96,10 @@ public class Arrow : MonoBehaviour
                     _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
 
+                    //*****May have to add hit Info for the target to define Target Behavior******
+
+                    //Sends the forceValue to the Target Objects
+                    _targetBehavior.UpdateForceValue(_forceValue);
                     //Objects that are hit by the arrow will only be affected by ForceMode if the bow is fully pulled
                     if (_forceValue >= 1) //May change this *****
                     {
@@ -121,4 +126,9 @@ public class Arrow : MonoBehaviour
         _rigidbody.useGravity = usePhysics;
         _rigidbody.isKinematic = !usePhysics;
     }
+
+    //public void CurrentForceValue(float value)
+    //{
+    //    _forceValue = value;
+    //}
 }

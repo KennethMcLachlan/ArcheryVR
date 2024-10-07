@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class TargetBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Rigidbody _rigidbody;
+    [SerializeField] private AudioSource _hitSFX;
+
+    private float _forceValue;
+
+    private void Start()
     {
-        
+        _rigidbody = GetComponent<Rigidbody>();
+        _hitSFX = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (_forceValue >= 1f)
+        {
+            Debug.Log("Target Trigger was hit! Force Value is: " + _forceValue);
+
+            _hitSFX.Play(); // May create an array to make a variety of SFX
+            _rigidbody.useGravity = true;
+            _rigidbody.isKinematic = false;
+            StartCoroutine(DestroyTargetOverTime());
+        }
+
+    }
+
+    private IEnumerator DestroyTargetOverTime()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
+    }
+
+    public void UpdateForceValue(float value)
+    {
+        _forceValue = value;
     }
 }
