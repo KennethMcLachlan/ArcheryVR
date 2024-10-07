@@ -70,6 +70,7 @@ public class PullInteraction : XRBaseInteractable
         {
             if (isSelected) //Double checks if the interaction is selected
             {
+                //HapticFeedback();
                 _arrowSpawner.InstantiateArrow();
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount

@@ -15,6 +15,8 @@ public class Arrow : MonoBehaviour
     private ParticleSystem _particleSystem;
     private TrailRenderer _trailRenderer;
 
+    private float _forceValue;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -47,8 +49,10 @@ public class Arrow : MonoBehaviour
         Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
 
         Debug.Log("Arrow Release Force Value: " + force + value);
+        _forceValue = value;
 
-        _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody
+        _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody (Projects the arrow)
+
 
         StartCoroutine(RotateWithVelocity());
 
@@ -90,7 +94,12 @@ public class Arrow : MonoBehaviour
                 {
                     _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
-                    body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+
+                    //Objects that are hit by the arrow will only be affected by ForceMode if the bow is fully pulled
+                    if (_forceValue >= 1) //May change this *****
+                    {
+                        body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+                    }
                 }
                 StopFunctions();
             }

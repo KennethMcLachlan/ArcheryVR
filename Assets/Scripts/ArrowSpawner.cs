@@ -40,7 +40,7 @@ public class ArrowSpawner : MonoBehaviour
 
     }
 
-    private void NotchEmpty(float value)
+    private void NotchEmpty(float value) // Needs a float value to match the Action Event
     {
         _arrowNotched = false;
         _currentArrow = null;
