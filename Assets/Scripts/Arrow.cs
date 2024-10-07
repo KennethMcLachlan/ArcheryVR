@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
     public Transform tip;
 
     private Rigidbody _rigidbody;
-    private bool _inAir;
+    private bool _inAir = false;
     private Vector3 _lastPosition = Vector3.zero;
 
     //VFX
@@ -36,11 +36,18 @@ public class Arrow : MonoBehaviour
     private void Release(float value)
     {
         PullInteraction.PullActionReleased -= Release; // Unsubscribe to prevent the arrow from unintended movement
-        gameObject.transform.parent = null;
+        if (gameObject != null)
+        {
+            gameObject.transform.parent = null;
+        }
         _inAir = true;
         SetPhysics(true);
 
+        //May be a spot to determine the Force applied to targets *****
         Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
+
+        Debug.Log("Arrow Release Force Value: " + force + value);
+
         _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody
 
         StartCoroutine(RotateWithVelocity());
@@ -54,7 +61,6 @@ public class Arrow : MonoBehaviour
 
     private IEnumerator RotateWithVelocity() // Allows the arrow to rotate in unison with projection
     {
-
         yield return new WaitForFixedUpdate();
         while (_inAir) 
         {

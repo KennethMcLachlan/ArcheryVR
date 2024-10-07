@@ -35,6 +35,7 @@ public class PullInteraction : XRBaseInteractable
     {
         _arrowSpawner = GameObject.Find("Bow").GetComponent<ArrowSpawner>();
     }
+
     //Is called on in OnSelectEntered
     public void SetPullInteractor(SelectEnterEventArgs args)
     {
@@ -46,13 +47,18 @@ public class PullInteraction : XRBaseInteractable
     //Signals to other scripts to tell the arrow to launch
     public void Release()
     {
-        PullActionReleased?.Invoke(pullAmount);
-        _pullingInteractor = null;
-        pullAmount = 0f; //Set to 0 because the BowString is no longer being pulled on
-        notch.transform.localPosition = new Vector3(notch.transform.localPosition.y, 0f);
-        UpdateString();
+        if (PullActionReleased != null)
+        {
+            PullActionReleased?.Invoke(pullAmount);
 
-        PlayReleaseAudio();
+            _pullingInteractor = null;
+            pullAmount = 0f; //Set to 0 because the BowString is no longer being pulled on
+
+            notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, 0f);
+            UpdateString();
+
+            PlayReleaseAudio();
+        }
     }
 
     //Is called from the XR Interaction manager
@@ -67,6 +73,7 @@ public class PullInteraction : XRBaseInteractable
                 _arrowSpawner.InstantiateArrow();
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
+                Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
 
                 UpdateString();
 
@@ -75,7 +82,7 @@ public class PullInteraction : XRBaseInteractable
     }
 
     //Math Stuff to calculate the values of pulling the BowString
-    private float CalculatePull(Vector3 pullPosition) //May be where I determine the Force Amount 
+    private float CalculatePull(Vector3 pullPosition) //May be where I determine the Force Amount ****
     {
         Vector3 pullDirection = pullPosition - start.position;
         Vector3 targetDirection = end.position - start.position;
@@ -90,6 +97,7 @@ public class PullInteraction : XRBaseInteractable
     {
         //Finds the position based on the start and end points based on the Calculated Pull Amount on the Z axis
         Vector3 linePosition = Vector3.forward * Mathf.Lerp(start.transform.localPosition.z, end.transform.localPosition.z, pullAmount);
+
         //Notch value to match the pull on the BowString
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, linePosition.z + 0.2f);
         _lineRenderer.SetPosition(1, linePosition);

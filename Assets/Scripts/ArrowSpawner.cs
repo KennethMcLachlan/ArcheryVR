@@ -12,6 +12,7 @@ public class ArrowSpawner : MonoBehaviour
     private XRGrabInteractable _bow;
     private bool _arrowNotched;
     private GameObject _currentArrow = null;
+
     void Start()
     {
         _bow = GetComponent<XRGrabInteractable>();
@@ -29,14 +30,14 @@ public class ArrowSpawner : MonoBehaviour
         if (_bow.isSelected && _arrowNotched == false)
         {
             _arrowNotched = true;
-            //Instantiate(arrow, notch.transform);
-            //StartCoroutine(DelayedSpawn());
         }
         if (!_bow.isSelected && _currentArrow != null)
         {
-            Destroy(_currentArrow);
+            //Destroy(_currentArrow);
             NotchEmpty(1f);
         }
+
+
     }
 
     private void NotchEmpty(float value)
