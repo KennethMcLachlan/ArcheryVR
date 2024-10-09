@@ -18,6 +18,9 @@ public class Arrow : MonoBehaviour
     private float _forceValue;
     public TargetBehavior _targetBehavior;
 
+    //Ray / Linecast
+    //private RaycastHit _hitInfo;
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -91,29 +94,36 @@ public class Arrow : MonoBehaviour
         {
             if (hitInfo.transform.gameObject.layer != 9) //Ensures the arrow ignores the Player's body (Layer 9)
             {
+                //Arrows can be applied to anything with a Rigidbody except for the player
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body)) // if there's a Rigidbody
                 {
-                    _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation
+                    _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation. No Jitter is noticeable and reduces memory usage
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
 
-                    //*****May have to add hit Info for the target to define Target Behavior******
-
-                    //Sends the forceValue to the Target Objects
-                    _targetBehavior.UpdateForceValue(_forceValue);
-                    //Objects that are hit by the arrow will only be affected by ForceMode if the bow is fully pulled
+                    //_targetBehavior.UpdateForceValue(_forceValue); Deemed Uneccesary
                     
                 }
 
                 if (hitInfo.transform.gameObject.layer == 10)
                 {
-                    _rigidbody.interpolation = RigidbodyInterpolation.None;
-                    transform.parent = hitInfo.transform; //Arrow sticks to the object it hits
+                    //Deemed next two line uneccessary
+                    //_rigidbody.interpolation = RigidbodyInterpolation.None;
+                    //transform.parent = hitInfo.transform; //Arrow sticks to the object it hits
+
+                    //Communicate to the tragetBehavior script
+                    
 
                     if (_forceValue >= 1) //Ensures the target is only affected when enough force is applied
                     {
-                        hitInfo.rigidbody.useGravity = true;
-                        hitInfo.rigidbody.isKinematic = false;
-                        body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+                        TargetBehavior targetBehavior = hitInfo.transform.GetComponent<TargetBehavior>();
+                        if (targetBehavior != null)
+                        {
+                            targetBehavior.TargetHit();
+
+                            hitInfo.rigidbody.useGravity = true;
+                            hitInfo.rigidbody.isKinematic = false;
+                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+                        }
                     }
                 }
 

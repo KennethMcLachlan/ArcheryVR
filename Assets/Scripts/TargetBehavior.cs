@@ -4,29 +4,13 @@ using UnityEngine;
 
 public class TargetBehavior : MonoBehaviour
 {
-    [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private AudioSource _hitSFX;
 
     private float _forceValue;
 
     private void Start()
     {
-        _rigidbody = GetComponent<Rigidbody>();
         _hitSFX = GetComponent<AudioSource>();
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (_forceValue >= 1f)
-        {
-            Debug.Log("Target Trigger was hit! Force Value is: " + _forceValue);
-
-            _hitSFX.Play(); // May create an array to make a variety of SFX
-            _rigidbody.useGravity = true;
-            _rigidbody.isKinematic = false;
-            StartCoroutine(DestroyTargetOverTime());
-        }
-
     }
 
     private IEnumerator DestroyTargetOverTime()
@@ -35,8 +19,11 @@ public class TargetBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void UpdateForceValue(float value)
+    public void TargetHit()
     {
-        _forceValue = value;
+        //Add Score when implemented
+        Debug.Log("Target was hit and communicated from Arrow Script");
+        _hitSFX.Play();
+        StartCoroutine(DestroyTargetOverTime());
     }
 }

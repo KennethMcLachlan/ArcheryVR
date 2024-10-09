@@ -74,10 +74,9 @@ public class PullInteraction : XRBaseInteractable
                 _arrowSpawner.InstantiateArrow();
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
-                Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
+                //Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
 
                 UpdateString();
-
             }
         }
     }
