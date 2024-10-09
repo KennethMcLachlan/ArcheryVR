@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 7494067923381634140}
   - component: {fileID: 5879213591708821276}
   - component: {fileID: 9196594943534859742}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TargetContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 7494067923381634140}
   _hitSFX: {fileID: 5879213591708821276}
-  arrowScript: {fileID: 0}
 --- !u!1 &8529793216785788874
 GameObject:
   m_ObjectHideFlags: 0

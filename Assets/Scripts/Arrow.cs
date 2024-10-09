@@ -101,11 +101,22 @@ public class Arrow : MonoBehaviour
                     //Sends the forceValue to the Target Objects
                     _targetBehavior.UpdateForceValue(_forceValue);
                     //Objects that are hit by the arrow will only be affected by ForceMode if the bow is fully pulled
-                    if (_forceValue >= 1) //May change this *****
+                    
+                }
+
+                if (hitInfo.transform.gameObject.layer == 10)
+                {
+                    _rigidbody.interpolation = RigidbodyInterpolation.None;
+                    transform.parent = hitInfo.transform; //Arrow sticks to the object it hits
+
+                    if (_forceValue >= 1) //Ensures the target is only affected when enough force is applied
                     {
+                        hitInfo.rigidbody.useGravity = true;
+                        hitInfo.rigidbody.isKinematic = false;
                         body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
                     }
                 }
+
                 StopFunctions();
             }
         }
