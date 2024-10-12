@@ -3,24 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class MenuController : MonoBehaviour
 {
 
-
+    //Player Positioning
     [SerializeField] private Transform _player;
+    [SerializeField] private ActionBasedContinuousMoveProvider _playerMovement;
     private Vector3 _activePlayPosition;
     private Quaternion _activePlayRotation;
     [SerializeField] private Transform _pauseSpawnLocation;
 
+    //Pause Menu area
     [SerializeField] private GameObject _pauseMenu;
-    public InputActionReference openPauseMenuAction;
-
     private bool _pauseMenuIsActive;
 
+    //Pause/Menu Button
+    public InputActionReference openPauseMenuAction;
+
+
     //Fade In/Out variables
-    //public VRFade _fadeManager;
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeDuration = 1f; // Duration for fade in/out
 
@@ -32,7 +36,11 @@ public class MenuController : MonoBehaviour
 
         StartCoroutine(GameStartFadeIn());
         _player = GameObject.Find("XR Origin (XR Rig)").GetComponent<Transform>();
-        _pauseMenuIsActive = false;
+        _playerMovement = GameObject.Find("XR Origin (XR Rig)").GetComponent<ActionBasedContinuousMoveProvider>();
+        if (_playerMovement == null)
+        {
+            Debug.Log("Move Provider has not been accessed");
+        }
     }
 
     private void OnDestroy()
@@ -42,10 +50,10 @@ public class MenuController : MonoBehaviour
         InputSystem.onDeviceChange -= onDeviceChange;
     }
 
+    //Turns the menu on/off
     private void ToggleMenu(InputAction.CallbackContext context)
     {
         _pauseMenuIsActive = !_pauseMenuIsActive; //Toggles Bool on Menu Button Press
-        //_activePlayPosition.transform.position = _player.transform.position; //Cache to grab Player's gameplay position
 
         if (_pauseMenuIsActive == true)
         {
@@ -58,8 +66,6 @@ public class MenuController : MonoBehaviour
         {
             StartCoroutine(PauseEndSequenceRoutine());
         }
-        //_pauseMenu.SetActive(!_pauseMenu.activeSelf); ** Made from tutorial may not need
-        
     }
 
     // Fade from transparent to black
@@ -92,6 +98,7 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    //Sequence of events that initiate when the Pause Button is active
     private IEnumerator PauseBeginSequenceRoutine()
     {
         StartCoroutine(FadeToBlack());
@@ -99,10 +106,12 @@ public class MenuController : MonoBehaviour
         _player.position = _pauseSpawnLocation.position;
         _player.rotation = _pauseSpawnLocation.rotation;
         //footlock the player ***
+        _playerMovement.moveSpeed = 0f;
         //Enable Controller Raycast Selector
         StartCoroutine(FadeOut());
     }
 
+    //Sequence of Evenets that initiate to end the Pause Menu Area
     private IEnumerator PauseEndSequenceRoutine()
     {
         StartCoroutine(FadeToBlack());
@@ -110,11 +119,12 @@ public class MenuController : MonoBehaviour
         _player.position = _activePlayPosition;
         _player.rotation = _activePlayRotation;
         //DisablePlayer Footlock
+        _playerMovement.moveSpeed = 6f;
         //Disable Controller Raycast Selector
         StartCoroutine(FadeOut());
     }
 
-    //Fade in at start of game (Helps ensure the Black Image is nopt present on start
+    //Fade in at start of game (Helps ensure the Black Image is not present on start)
     private IEnumerator GameStartFadeIn()
     {
         fadeImage.color = new Color(0, 0, 0, 1); // Start with black
