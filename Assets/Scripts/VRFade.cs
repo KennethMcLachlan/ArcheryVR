@@ -15,10 +15,10 @@ public class VRFade : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            StartCoroutine(FullFadeSequence());
-        }
+        //if (Input.GetKeyUp(KeyCode.F))
+        //{
+        //    StartCoroutine(FullFadeSequence());
+        //}
     }
     // Call this function to start fading to black
     public void StartFadeToBlack()
@@ -69,10 +69,20 @@ public class VRFade : MonoBehaviour
         yield return FadeOut(); // Fade out from black
     }
 
-    private IEnumerator FullFadeSequence()
-    {
-        StartCoroutine(FadeToBlack());
-        yield return new WaitForSeconds(1.5f);
-        StartCoroutine(FadeOut());
-    }
+    ////My creattion to fade in/out when pause menu button is hit
+    //private IEnumerator FullFadeSequence()
+    //{
+    //    //Fade To Black
+    //    float elapsedTime = 0f;
+    //    Color color = fadeImage.color;
+
+    //    while (elapsedTime < fadeDuration)
+    //    {
+    //        elapsedTime += Time.deltaTime;
+    //        color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+    //        fadeImage.color = color;
+    //        yield return null;
+    //    }
+    //}
+
 }

@@ -783,7 +783,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Menu",
+                    "name": "MenuButton",
                     "type": "Button",
                     "id": "115b327f-1e97-4db9-829e-9873df69dcd1",
                     "expectedControlType": "Button",
@@ -965,7 +965,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
-                    "action": "Menu",
+                    "action": "MenuButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
