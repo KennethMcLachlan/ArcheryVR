@@ -18,11 +18,11 @@ public class Arrow : MonoBehaviour
     private float _forceValue;
     public TargetBehavior _targetBehavior;
 
-    //Ray / Linecast
-    //private RaycastHit _hitInfo;
-
+    public PullInteraction pullInteraction;
     private void Awake()
     {
+        pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
+
         _rigidbody = GetComponent<Rigidbody>();
         PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
 
@@ -106,13 +106,7 @@ public class Arrow : MonoBehaviour
 
                 if (hitInfo.transform.gameObject.layer == 10)
                 {
-                    //Deemed next two line uneccessary
-                    //_rigidbody.interpolation = RigidbodyInterpolation.None;
-                    //transform.parent = hitInfo.transform; //Arrow sticks to the object it hits
-
-                    //Communicate to the tragetBehavior script
                     
-
                     if (_forceValue >= 1) //Ensures the target is only affected when enough force is applied
                     {
                         TargetBehavior targetBehavior = hitInfo.transform.GetComponent<TargetBehavior>();
@@ -124,6 +118,15 @@ public class Arrow : MonoBehaviour
                             hitInfo.rigidbody.isKinematic = false;
                             body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
                         }
+                    }
+                }
+
+                if (hitInfo.transform.gameObject.layer == 11) // Initiates the Bomb Powerup when hit
+                {
+                    BombPowerup bombPowerup = hitInfo.transform.GetComponent<BombPowerup>();
+                    if (bombPowerup != null)
+                    {
+                        bombPowerup.BombPowerupHit();
                     }
                 }
 
@@ -148,8 +151,4 @@ public class Arrow : MonoBehaviour
         _rigidbody.isKinematic = !usePhysics;
     }
 
-    //public void CurrentForceValue(float value)
-    //{
-    //    _forceValue = value;
-    //}
 }

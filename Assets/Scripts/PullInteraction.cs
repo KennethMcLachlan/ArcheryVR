@@ -20,12 +20,17 @@ public class PullInteraction : XRBaseInteractable
     private IXRSelectInteractor _pullingInteractor = null;
 
     private ArrowSpawner _arrowSpawner;
+    public Arrow arrow;
 
     //Audio
     private AudioSource _audioSource;
 
+    //Change Arrow Instantiate to Bomb Arrow
+    private bool _bombArrowIsActive;
+
     protected override void Awake()
     {
+
         base.Awake();
         _lineRenderer = GetComponent<LineRenderer>();
         _audioSource = GetComponent<AudioSource>();
@@ -70,8 +75,15 @@ public class PullInteraction : XRBaseInteractable
         {
             if (isSelected) //Double checks if the interaction is selected
             {
-                //HapticFeedback();
-                _arrowSpawner.InstantiateArrow();
+                if (_bombArrowIsActive == true)
+                {
+                    _arrowSpawner.InstantiateBombArrow();
+                    Debug.Log("Switched to Bomb Arrows");
+                }
+                else if (_bombArrowIsActive == false)
+                {
+                    _arrowSpawner.InstantiateArrow();
+                }
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
                 //Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
@@ -114,5 +126,23 @@ public class PullInteraction : XRBaseInteractable
     private void PlayReleaseAudio()
     {
         _audioSource.Play();
+    }
+
+    private IEnumerator BombDurationRoutine()
+    {
+        yield return new WaitForSeconds(5f);
+        _bombArrowIsActive = false;
+        Debug.Log("Bomb Arrow has been deactivated");
+    }
+    public void ReceiveBombInfoTrue()
+    {
+        _bombArrowIsActive = true;
+        StartCoroutine(BombDurationRoutine());
+        Debug.Log("Bomb arrows set to true on Pull Interaction Script");
+    }
+
+    public void ReceiveBombInfoFalse()
+    {
+        _bombArrowIsActive = false;
     }
 }

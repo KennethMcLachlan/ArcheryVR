@@ -79,6 +79,10 @@ MonoBehaviour:
   tip: {fileID: 1769337598482281036}
   _targetBehavior: {fileID: 9196594943534859742, guid: 1ed6259990c518d47ac2cab7f02e775f,
     type: 3}
+  bombPrefab: {fileID: 0}
+  explosiveForce: 10
+  explosiveRadius: 5
+  upwardsModifier: 5
 --- !u!1 &1769337598482281027
 GameObject:
   m_ObjectHideFlags: 0

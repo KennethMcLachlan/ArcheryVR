@@ -16,12 +16,9 @@ public class MenuController : MonoBehaviour
     private Quaternion _activePlayRotation;
     [SerializeField] private Transform _pauseSpawnLocation;
 
-    //Pause Menu area
-    [SerializeField] private GameObject _pauseMenu;
-    private bool _pauseMenuIsActive;
-
     //Pause/Menu Button
     public InputActionReference openPauseMenuAction;
+    private bool _pauseMenuIsActive;
 
     //Ray Interactor Object
     [SerializeField] private GameObject _rayInteractor;

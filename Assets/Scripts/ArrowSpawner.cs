@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ArrowSpawner : MonoBehaviour
 {
     public GameObject arrow;
+    public GameObject bombArrow;
     public GameObject notch;
 
     private XRGrabInteractable _bow;
@@ -55,5 +56,10 @@ public class ArrowSpawner : MonoBehaviour
     public void InstantiateArrow()
     {
         _currentArrow = Instantiate(arrow, notch.transform);
+    }
+
+    public void InstantiateBombArrow()
+    {
+        _currentArrow = Instantiate(bombArrow, notch.transform);
     }
 }
