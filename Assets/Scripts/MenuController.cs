@@ -23,6 +23,8 @@ public class MenuController : MonoBehaviour
     //Pause/Menu Button
     public InputActionReference openPauseMenuAction;
 
+    //Ray Interactor Object
+    [SerializeField] private GameObject _rayInteractor;
 
     //Fade In/Out variables
     [SerializeField] private Image fadeImage;
@@ -101,26 +103,26 @@ public class MenuController : MonoBehaviour
     //Sequence of events that initiate when the Pause Button is active
     private IEnumerator PauseBeginSequenceRoutine()
     {
+        _pauseMenuIsActive = true;
         StartCoroutine(FadeToBlack());
         yield return new WaitForSeconds(1f);
         _player.position = _pauseSpawnLocation.position;
         _player.rotation = _pauseSpawnLocation.rotation;
-        //footlock the player ***
-        _playerMovement.moveSpeed = 0f;
-        //Enable Controller Raycast Selector
+        _playerMovement.moveSpeed = 0f; //Prevents player movement when in menu
+        _rayInteractor.SetActive(true); //Enable Controller Raycast Selector
         StartCoroutine(FadeOut());
     }
 
     //Sequence of Evenets that initiate to end the Pause Menu Area
     private IEnumerator PauseEndSequenceRoutine()
     {
+        _pauseMenuIsActive = false;
         StartCoroutine(FadeToBlack());
         yield return new WaitForSeconds(1f);
         _player.position = _activePlayPosition;
         _player.rotation = _activePlayRotation;
-        //DisablePlayer Footlock
-        _playerMovement.moveSpeed = 6f;
-        //Disable Controller Raycast Selector
+        _playerMovement.moveSpeed = 5f; //Enables Player Movement
+        _rayInteractor.SetActive(false); //Disable Controller Raycast Selector
         StartCoroutine(FadeOut());
     }
 
@@ -129,6 +131,11 @@ public class MenuController : MonoBehaviour
     {
         fadeImage.color = new Color(0, 0, 0, 1); // Start with black
         yield return FadeOut(); // Fade out from black
+    }
+
+    public void ResumeGameFromButton()
+    {
+        StartCoroutine(PauseEndSequenceRoutine());
     }
 
     //Used for Switching devices like controllers to and tracking (Error Prevention for this project)
