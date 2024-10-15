@@ -26,7 +26,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private bool _timerIsActive;
     [SerializeField] private TMP_Text _timerText;
 
-    [SerializeField] private TMP_Text _score;
+    //Score
+    [SerializeField] private TMP_Text _scoreText;
+    [SerializeField] private int _scoreValue;
 
     private void Awake()
     {
@@ -35,7 +37,7 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
-        
+        _scoreText.text = "Score: ";
     }
 
     private void Update()
@@ -66,4 +68,10 @@ public class UIManager : MonoBehaviour
         _timerText.text = string.Format("{0:0} : {1:00}", minutes, seconds);
     }
 
+    public void UpdateScore()
+    {
+        _scoreValue += 1;
+        _scoreText.text = _scoreValue.ToString();
+        Debug.Log("Current Score is" +  _scoreValue);
+    }
 }

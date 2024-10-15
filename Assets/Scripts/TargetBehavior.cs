@@ -7,6 +7,7 @@ public class TargetBehavior : MonoBehaviour
     [SerializeField] private AudioSource _hitSFX;
 
     private float _forceValue;
+    private int _score;
 
     private void Start()
     {
@@ -23,7 +24,15 @@ public class TargetBehavior : MonoBehaviour
     {
         //Add Score when implemented
         Debug.Log("Target was hit and communicated from Arrow Script");
+        UIManager.Instance.UpdateScore();
         _hitSFX.Play();
         StartCoroutine(DestroyTargetOverTime());
+    }
+    
+    private IEnumerator UpdateScoreRoutine()
+    {
+        yield return new WaitForEndOfFrame();
+        UIManager.Instance.UpdateScore();
+
     }
 }

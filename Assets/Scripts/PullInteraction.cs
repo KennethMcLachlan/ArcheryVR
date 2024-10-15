@@ -20,13 +20,17 @@ public class PullInteraction : XRBaseInteractable
     private IXRSelectInteractor _pullingInteractor = null;
 
     private ArrowSpawner _arrowSpawner;
-    public Arrow arrow;
+    public Arrow arrowScript;
+
+    private GameObject _arrow;
 
     //Audio
     private AudioSource _audioSource;
 
     //Change Arrow Instantiate to Bomb Arrow
     private bool _bombArrowIsActive;
+
+    private bool _arrowIsSpawned;
 
     protected override void Awake()
     {
@@ -63,6 +67,10 @@ public class PullInteraction : XRBaseInteractable
             UpdateString();
 
             PlayReleaseAudio();
+
+            //Null out the arrow variable
+            //_arrow = null;
+            _arrowIsSpawned = false;
         }
     }
 
@@ -73,23 +81,28 @@ public class PullInteraction : XRBaseInteractable
         base.ProcessInteractable(updatePhase);
         if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic) //If it occurs during the Dynamic Phase
         {
-            if (isSelected) //Double checks if the interaction is selected
+            
+            if (isSelected ) //Double checks if the interaction is selected
             {
-                if (_bombArrowIsActive == true)
+                if (_bombArrowIsActive == true && _arrowIsSpawned == false)
                 {
                     _arrowSpawner.InstantiateBombArrow();
                     Debug.Log("Switched to Bomb Arrows");
                 }
-                else if (_bombArrowIsActive == false)
+                else if (_bombArrowIsActive == false && _arrowIsSpawned == false)
                 {
                     _arrowSpawner.InstantiateArrow();
+                    Debug.Log("Arrow has Spawned");
                 }
+                _arrowIsSpawned = true;
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
-                //Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
+                                                          //Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
 
                 UpdateString();
+
             }
+
         }
     }
 

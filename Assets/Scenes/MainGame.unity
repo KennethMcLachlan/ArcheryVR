@@ -52873,6 +52873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 950261185}
+  - component: {fileID: 950261186}
   m_Layer: 0
   m_Name: UI_Manager
   m_TagString: Untagged
@@ -52897,6 +52898,23 @@ Transform:
   - {fileID: 410287294}
   m_Father: {fileID: 1380120875}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950261186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950261184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e3edf03171a3a48801db50f40b54b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeRemaining: 60
+  _timerIsActive: 0
+  _timerText: {fileID: 2117820261}
+  _scoreText: {fileID: 1935202689}
+  _scoreValue: 0
 --- !u!1001 &951816377
 PrefabInstance:
   m_ObjectHideFlags: 0

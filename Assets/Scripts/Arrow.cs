@@ -113,7 +113,6 @@ public class Arrow : MonoBehaviour
                         if (targetBehavior != null)
                         {
                             targetBehavior.TargetHit();
-
                             hitInfo.rigidbody.useGravity = true;
                             hitInfo.rigidbody.isKinematic = false;
                             body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
