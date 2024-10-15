@@ -20,9 +20,6 @@ public class PullInteraction : XRBaseInteractable
     private IXRSelectInteractor _pullingInteractor = null;
 
     private ArrowSpawner _arrowSpawner;
-    public Arrow arrowScript;
-
-    private GameObject _arrow;
 
     //Audio
     private AudioSource _audioSource;

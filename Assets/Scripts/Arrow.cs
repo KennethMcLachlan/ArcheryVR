@@ -120,6 +120,15 @@ public class Arrow : MonoBehaviour
                     }
                 }
 
+                if (hitInfo.transform.gameObject.layer == 12)
+                {
+                    ScorePowerup scorePowerup = hitInfo.transform.GetComponent<ScorePowerup>();
+                    if (scorePowerup != null)
+                    {
+                        scorePowerup.ScorePowerupHit();
+                    }
+                }
+
                 StopFunctions();
             }
         }

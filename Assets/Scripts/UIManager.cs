@@ -30,6 +30,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private int _scoreValue;
 
+    //ScorePowerup
+    private bool _scorePowerupIsActive;
+
     private void Awake()
     {
         _instance = this;
@@ -70,8 +73,28 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore()
     {
-        _scoreValue += 100;
+        if (_scorePowerupIsActive == true)
+        {
+            _scoreValue += 100 * 2;
+            StartCoroutine(ScorePowerupCooldownRoutine());
+        }
+        else
+        {
+            _scoreValue += 100;
+        }
         _scoreText.text = "Score: " + _scoreValue.ToString();
         Debug.Log("Current Score is" +  _scoreValue);
     }
+
+    private IEnumerator ScorePowerupCooldownRoutine()
+    {
+        yield return new WaitForSeconds(5f);
+        _scorePowerupIsActive = false;
+    }
+
+    public void ReceiveScorePowerup()
+    {
+        _scorePowerupIsActive = true;
+    }
+
 }

@@ -110,6 +110,7 @@ public class BombArrow : MonoBehaviour
 
                 }
 
+                //Regular Arrow hit
                 if (hitInfo.transform.gameObject.layer == 10)
                 {
 
@@ -127,6 +128,7 @@ public class BombArrow : MonoBehaviour
                     }
                 }
 
+                //Bomb Arrow Powerup hit
                 if (hitInfo.transform.gameObject.layer == 11) // Initiates the Bomb Powerup when hit
                 {
                     BombPowerup bombPowerup = hitInfo.transform.GetComponent<BombPowerup>();
@@ -150,6 +152,7 @@ public class BombArrow : MonoBehaviour
                     }
                 }
 
+                //Bomb Arrow Explosion
                 int layerMask = 1 << 10;
                 Collider[] colliders = Physics.OverlapSphere(tip.position, explosiveRadius, layerMask);
                 foreach (Collider hit in colliders)
@@ -171,6 +174,16 @@ public class BombArrow : MonoBehaviour
                         {
                             Debug.Log("Explosion did not affect other targets");
                         }
+                    }
+                }
+
+                //Score Powerup Hit
+                if (hitInfo.transform.gameObject.layer == 12)
+                {
+                    ScorePowerup scorePowerup = hitInfo.transform.GetComponent<ScorePowerup>();
+                    if (scorePowerup != null)
+                    {
+                        scorePowerup.ScorePowerupHit();
                     }
                 }
 
