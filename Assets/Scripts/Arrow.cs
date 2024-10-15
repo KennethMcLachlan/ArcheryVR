@@ -42,24 +42,19 @@ public class Arrow : MonoBehaviour
     private void Release(float value)
     {
         PullInteraction.PullActionReleased -= Release; // Unsubscribe to prevent the arrow from unintended movement
+
         if (gameObject != null)
         {
             gameObject.transform.parent = null;
         }
+
         _inAir = true;
         SetPhysics(true);
 
-        //May be a spot to determine the Force applied to targets *****
         Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
-
-        Debug.Log("Arrow Release Force Value: " + force + value);
         _forceValue = value;
-
         _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody (Projects the arrow)
-
-
         StartCoroutine(RotateWithVelocity());
-
         _lastPosition = tip.position;
 
         //VFX
@@ -95,18 +90,14 @@ public class Arrow : MonoBehaviour
             if (hitInfo.transform.gameObject.layer != 9) //Ensures the arrow ignores the Player's body (Layer 9)
             {
                 //Arrows can be applied to anything with a Rigidbody except for the player
-                if (hitInfo.transform.TryGetComponent(out Rigidbody body)) // if there's a Rigidbody
+                if (hitInfo.transform.TryGetComponent(out Rigidbody body))
                 {
                     _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation. No Jitter is noticeable and reduces memory usage
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
-
-                    //_targetBehavior.UpdateForceValue(_forceValue); Deemed Uneccesary
-                    
                 }
 
                 if (hitInfo.transform.gameObject.layer == 10)
                 {
-                    
                     if (_forceValue >= 1) //Ensures the target is only affected when enough force is applied
                     {
                         TargetBehavior targetBehavior = hitInfo.transform.GetComponent<TargetBehavior>();

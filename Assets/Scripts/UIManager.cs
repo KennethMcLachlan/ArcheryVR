@@ -70,8 +70,8 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScore()
     {
-        _scoreValue += 1;
-        _scoreText.text = _scoreValue.ToString();
+        _scoreValue += 100;
+        _scoreText.text = "Score: " + _scoreValue.ToString();
         Debug.Log("Current Score is" +  _scoreValue);
     }
 }
