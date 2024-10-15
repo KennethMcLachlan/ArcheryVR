@@ -237,7 +237,7 @@ MonoBehaviour:
   speed: 10
   tip: {fileID: 4263686821020287369}
   _targetBehavior: {fileID: 0}
-  explosiveForce: 1500
+  explosiveForce: 2000
   explosiveRadius: 2
   upwardsModifier: 2
   _bombIsActive: 0
