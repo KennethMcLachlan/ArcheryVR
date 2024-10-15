@@ -96,6 +96,7 @@ public class Arrow : MonoBehaviour
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
                 }
 
+                //Arrows can hit Targets
                 if (hitInfo.transform.gameObject.layer == 10)
                 {
                     if (_forceValue >= 1) //Ensures the target is only affected when enough force is applied
@@ -111,6 +112,7 @@ public class Arrow : MonoBehaviour
                     }
                 }
 
+                //Arrows can hit the Bomb Powerup
                 if (hitInfo.transform.gameObject.layer == 11) // Initiates the Bomb Powerup when hit
                 {
                     BombPowerup bombPowerup = hitInfo.transform.GetComponent<BombPowerup>();
@@ -120,12 +122,23 @@ public class Arrow : MonoBehaviour
                     }
                 }
 
+                //Arrows can hit the Score Powerup
                 if (hitInfo.transform.gameObject.layer == 12)
                 {
                     ScorePowerup scorePowerup = hitInfo.transform.GetComponent<ScorePowerup>();
                     if (scorePowerup != null)
                     {
                         scorePowerup.ScorePowerupHit();
+                    }
+                }
+
+                //Arrows can hit the Time Powerup
+                if (hitInfo.transform.gameObject.layer == 13)
+                {
+                    TimePowerup timePowerup = hitInfo.transform.GetComponent<TimePowerup>();
+                    if (timePowerup != null)
+                    {
+                        timePowerup.TimePowerupHit();
                     }
                 }
 

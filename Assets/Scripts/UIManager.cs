@@ -45,6 +45,17 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _timeRemaining = 90f;
+            _timerIsActive = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            ReceiveExtraTime();
+        }
+
         if (_timerIsActive == true)
         {
             if (_timeRemaining > 0)
@@ -71,6 +82,7 @@ public class UIManager : MonoBehaviour
         _timerText.text = string.Format("{0:0} : {1:00}", minutes, seconds);
     }
 
+    //Update Score from Target Hits
     public void UpdateScore()
     {
         if (_scorePowerupIsActive == true)
@@ -86,6 +98,7 @@ public class UIManager : MonoBehaviour
         Debug.Log("Current Score is" +  _scoreValue);
     }
 
+    //Score Powerup
     private IEnumerator ScorePowerupCooldownRoutine()
     {
         yield return new WaitForSeconds(5f);
@@ -95,6 +108,13 @@ public class UIManager : MonoBehaviour
     public void ReceiveScorePowerup()
     {
         _scorePowerupIsActive = true;
+    }
+
+    //Timer Powerup
+
+    public void ReceiveExtraTime()
+    {
+        _timeRemaining += 15f;
     }
 
 }

@@ -187,6 +187,17 @@ public class BombArrow : MonoBehaviour
                     }
                 }
 
+                //TimePowerup Hit
+                //Arrows can hit the Time Powerup
+                if (hitInfo.transform.gameObject.layer == 13)
+                {
+                    TimePowerup timePowerup = hitInfo.transform.GetComponent<TimePowerup>();
+                    if (timePowerup != null)
+                    {
+                        timePowerup.TimePowerupHit();
+                    }
+                }
+
                 StopFunctions();
             }
         }
