@@ -10,11 +10,6 @@ public class BombPowerup : MonoBehaviour
         pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
     }
 
-    void Update()
-    {
-        
-    }
-
     public void BombPowerupHit()
     {
         Debug.Log("BombPowerup was hit");

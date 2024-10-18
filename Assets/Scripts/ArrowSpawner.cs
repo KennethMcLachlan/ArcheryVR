@@ -38,8 +38,6 @@ public class ArrowSpawner : MonoBehaviour
             //Destroy(_currentArrow);
             NotchEmpty(1f);
         }
-
-
     }
 
     private void NotchEmpty(float value) // Needs a float value to match the Action Event

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using static UnityEditor.PlayerSettings;
 
 public class Arrow : MonoBehaviour
 {
@@ -12,13 +14,15 @@ public class Arrow : MonoBehaviour
     private Vector3 _lastPosition = Vector3.zero;
 
     //VFX
-    private ParticleSystem _particleSystem;
+    //private ParticleSystem _particleSystem;
     private TrailRenderer _trailRenderer;
 
     private float _forceValue;
     public TargetBehavior _targetBehavior;
 
     public PullInteraction pullInteraction;
+
+    
     private void Awake()
     {
         pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
@@ -27,7 +31,7 @@ public class Arrow : MonoBehaviour
         PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
 
         //VFX
-        _particleSystem = GetComponentInChildren<ParticleSystem>();
+        //_particleSystem = GetComponentInChildren<ParticleSystem>();
         _trailRenderer = GetComponentInChildren<TrailRenderer>();
 
         PullInteraction.PullActionReleased += Release;
@@ -39,7 +43,7 @@ public class Arrow : MonoBehaviour
         PullInteraction.PullActionReleased -= Release; // Unsubscribes when the object is destroyed
     }
 
-    private void Release(float value)
+    public void Release(float value)
     {
         PullInteraction.PullActionReleased -= Release; // Unsubscribe to prevent the arrow from unintended movement
 
@@ -53,12 +57,13 @@ public class Arrow : MonoBehaviour
 
         Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
         _forceValue = value;
+
         _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody (Projects the arrow)
         StartCoroutine(RotateWithVelocity());
         _lastPosition = tip.position;
 
         //VFX
-        _particleSystem.Play();
+        //_particleSystem.Play();
         _trailRenderer.emitting = true;
     }
 
@@ -147,13 +152,13 @@ public class Arrow : MonoBehaviour
         }
     }
 
-    private void StopFunctions()
+    public void StopFunctions()
     {
         _inAir = false;
         SetPhysics(false);
 
         //VFX
-        _particleSystem.Stop();
+        //_particleSystem.Stop();
         _trailRenderer.emitting = false;
     }
 

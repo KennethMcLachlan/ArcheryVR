@@ -20,6 +20,7 @@ public class PullInteraction : XRBaseInteractable
     private IXRSelectInteractor _pullingInteractor = null;
 
     private ArrowSpawner _arrowSpawner;
+    private Arrow _arrow;
 
     //Audio
     private AudioSource _audioSource;
@@ -28,6 +29,14 @@ public class PullInteraction : XRBaseInteractable
     private bool _bombArrowIsActive;
 
     private bool _arrowIsSpawned;
+
+    //Reference for the Line Renderer (Trajectory)
+    [SerializeField] private LineRenderer _line;
+
+    //Reference to the simulated Physics Script (TrajectoryLine
+    [SerializeField] private TrajectoryLine _trajectoryLine;
+
+    [SerializeField] private Arrow _arrowPrefab;
 
     protected override void Awake()
     {
@@ -65,8 +74,6 @@ public class PullInteraction : XRBaseInteractable
 
             PlayReleaseAudio();
 
-            //Null out the arrow variable
-            //_arrow = null;
             _arrowIsSpawned = false;
         }
     }
@@ -78,7 +85,7 @@ public class PullInteraction : XRBaseInteractable
         base.ProcessInteractable(updatePhase);
         if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic) //If it occurs during the Dynamic Phase
         {
-            
+
             if (isSelected ) //Double checks if the interaction is selected
             {
                 if (_bombArrowIsActive == true && _arrowIsSpawned == false)
@@ -94,7 +101,6 @@ public class PullInteraction : XRBaseInteractable
                 _arrowIsSpawned = true;
                 Vector3 pullPosition = _pullingInteractor.transform.position; //Gets the pull position based on the Pull Interactor
                 pullAmount = CalculatePull(pullPosition); // Calculates the Pull Amount
-                                                          //Debug.Log("Pull Position: " + pullPosition + "Pull Amount: " + pullAmount);
 
                 UpdateString();
 
@@ -104,7 +110,7 @@ public class PullInteraction : XRBaseInteractable
     }
 
     //Math Stuff to calculate the values of pulling the BowString
-    private float CalculatePull(Vector3 pullPosition) //May be where I determine the Force Amount ****
+    public float CalculatePull(Vector3 pullPosition) //May be where I determine the Force Amount ****
     {
         Vector3 pullDirection = pullPosition - start.position;
         Vector3 targetDirection = end.position - start.position;
@@ -123,6 +129,9 @@ public class PullInteraction : XRBaseInteractable
         //Notch value to match the pull on the BowString
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, linePosition.z + 0.2f);
         _lineRenderer.SetPosition(1, linePosition);
+
+        _trajectoryLine.SimulatedTrajectory(_arrowPrefab, transform.position, transform.forward * pullAmount);
+
     }
 
     private void HapticFeedback()

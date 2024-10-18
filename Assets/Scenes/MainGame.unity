@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 2925428}
   m_Layer: 0
   m_Name: Plane (36)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,6 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 391036435225440588, guid: dec0b4884d0762a4a9bc50b97a669bbd,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 391036435225440588, guid: dec0b4884d0762a4a9bc50b97a669bbd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -796,6 +801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -899,6 +909,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -990,6 +1005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -1356,6 +1376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1551,6 +1576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1622,6 +1652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_Dinner_Art (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
@@ -2080,6 +2115,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2106,6 +2146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -2306,7 +2351,7 @@ GameObject:
   - component: {fileID: 47394783}
   m_Layer: 0
   m_Name: Plane (122)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2410,6 +2455,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -2541,6 +2591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Grass_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439904337943108576, guid: ef62619642b0df743b22dd5120c6ac4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1439904337943108576, guid: ef62619642b0df743b22dd5120c6ac4d,
         type: 3}
@@ -2929,7 +2984,7 @@ GameObject:
   - component: {fileID: 61125964}
   m_Layer: 0
   m_Name: PauseMountains
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3006,7 +3061,7 @@ GameObject:
   - component: {fileID: 61458838}
   m_Layer: 0
   m_Name: Plane (18)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3211,7 +3266,7 @@ GameObject:
   - component: {fileID: 64653905}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3427,7 +3482,7 @@ GameObject:
   - component: {fileID: 66489332}
   m_Layer: 0
   m_Name: Plane (39)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3623,6 +3678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -4417,7 +4477,7 @@ GameObject:
   - component: {fileID: 82945390}
   m_Layer: 0
   m_Name: Plane (75)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4520,7 +4580,7 @@ GameObject:
   - component: {fileID: 85682857}
   m_Layer: 0
   m_Name: BGMountains
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4914,7 +4974,7 @@ GameObject:
   - component: {fileID: 96187515}
   m_Layer: 0
   m_Name: Plane (88)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5085,6 +5145,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5193,7 +5258,7 @@ GameObject:
   - component: {fileID: 102444127}
   m_Layer: 0
   m_Name: Plane (112)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5533,37 +5598,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 12561753}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &113266925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113266926}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.12212891, y: 0.12212881, z: -0.6964801, w: 0.69648015}
-  m_LocalPosition: {x: -0, y: -0.053, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 0, y: 19.892, z: -90}
---- !u!1 &113266926
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 113266925}
-  m_Layer: 9
-  m_Name: AttachPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &115216687
 GameObject:
   m_ObjectHideFlags: 0
@@ -6346,7 +6380,7 @@ GameObject:
   - component: {fileID: 120543271}
   m_Layer: 0
   m_Name: Plane (37)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6819,6 +6853,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4604741551334686701, guid: 050f06ac3f0f0c043ba51690d2ee6687,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604741551334686701, guid: 050f06ac3f0f0c043ba51690d2ee6687,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -6883,7 +6922,7 @@ GameObject:
   - component: {fileID: 125303341}
   m_Layer: 0
   m_Name: Plane (133)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7035,7 +7074,7 @@ GameObject:
   - component: {fileID: 129254233}
   m_Layer: 0
   m_Name: Plane (84)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7739,6 +7778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8254,235 +8298,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149700201}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &151460207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3701202431134241889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 397637542}
-  m_Colliders:
-  - {fileID: 151460208}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_InteractionLayers:
-    m_Bits: 6
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1533223735}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_OnFirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnLastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectCanceled:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnActivate:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnDeactivate:
-    m_PersistentCalls:
-      m_Calls: []
-  m_AttachTransform: {fileID: 113266925}
-  m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
-  m_MatchAttachPosition: 1
-  m_MatchAttachRotation: 1
-  m_SnapToColliderVolume: 1
-  m_ReinitializeDynamicAttachEverySingleGrab: 1
-  m_AttachEaseInTime: 0.15
-  m_MovementType: 2
-  m_VelocityDamping: 1
-  m_VelocityScale: 1
-  m_AngularVelocityDamping: 1
-  m_AngularVelocityScale: 1
-  m_TrackPosition: 1
-  m_SmoothPosition: 0
-  m_SmoothPositionAmount: 8
-  m_TightenPosition: 0.1
-  m_TrackRotation: 1
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 8
-  m_TightenRotation: 0.1
-  m_TrackScale: 1
-  m_SmoothScale: 0
-  m_SmoothScaleAmount: 8
-  m_TightenScale: 0.1
-  m_ThrowOnDetach: 1
-  m_ThrowSmoothingDuration: 0.25
-  m_ThrowSmoothingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
-  m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 1
-  m_AttachPointCompatibilityMode: 0
-  m_StartingSingleGrabTransformers: []
-  m_StartingMultipleGrabTransformers: []
-  m_AddDefaultGrabTransformers: 1
---- !u!65 &151460208
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934756542431147293}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.10872232, y: 0.016957115, z: 0.020353932}
-  m_Center: {x: 0.0038797392, y: -0.0045223124, z: 0.0001769642}
---- !u!54 &151460209
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3701202431134241889}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &151460214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3701202431134241889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0e251f175d75647bdfeebba38c9531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  arrow: {fileID: 1769337597633466025, guid: 54ba44d4ecd83324991be29cf49b127d, type: 3}
-  bombArrow: {fileID: 2451787123533819302, guid: 01cf73ca89089b244b9160982fb6ec66,
-    type: 3}
-  notch: {fileID: 225074640}
 --- !u!4 &154375503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 685195320120420345, guid: 512b72c73a22e904d87662ebca8eb1e1,
@@ -8554,6 +8369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4400482160171448048, guid: 18bb023d75a113f4cb8d1452371f5c0e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400482160171448048, guid: 18bb023d75a113f4cb8d1452371f5c0e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -8580,6 +8400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -8691,7 +8516,7 @@ GameObject:
   - component: {fileID: 159110959}
   m_Layer: 0
   m_Name: Plane (118)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9108,7 +8933,7 @@ GameObject:
   - component: {fileID: 161460016}
   m_Layer: 0
   m_Name: Plane (63)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9242,7 +9067,7 @@ GameObject:
   - component: {fileID: 164139807}
   m_Layer: 0
   m_Name: Vegetation
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -9289,6 +9114,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -9806,6 +9636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -9986,6 +9821,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -10094,7 +9934,7 @@ GameObject:
   - component: {fileID: 183149065}
   m_Layer: 0
   m_Name: Plane (85)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10917,7 +10757,7 @@ GameObject:
   - component: {fileID: 187734956}
   m_Layer: 0
   m_Name: Plane (16)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11732,6 +11572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11860,6 +11705,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11892,7 +11742,7 @@ GameObject:
   - component: {fileID: 200207341}
   m_Layer: 0
   m_Name: Plane (62)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12004,6 +11854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -12112,7 +11967,7 @@ GameObject:
   - component: {fileID: 202869039}
   m_Layer: 0
   m_Name: Plane (60)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13166,6 +13021,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -13301,6 +13161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Sunflower_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400482160171448048, guid: 18bb023d75a113f4cb8d1452371f5c0e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4400482160171448048, guid: 18bb023d75a113f4cb8d1452371f5c0e,
         type: 3}
@@ -14049,37 +13914,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223053307}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &225074640
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 225074647}
-  m_Layer: 9
-  m_Name: Notch
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &225074647
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 225074640}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03199986, y: -0.03400002, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &225088777
 GameObject:
   m_ObjectHideFlags: 0
@@ -14199,7 +14033,7 @@ GameObject:
   - component: {fileID: 225436673}
   m_Layer: 0
   m_Name: Plane (138)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14305,7 +14139,7 @@ GameObject:
   - component: {fileID: 232012154}
   m_Layer: 0
   m_Name: Plane (123)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14414,7 +14248,7 @@ GameObject:
   - component: {fileID: 235978119}
   m_Layer: 0
   m_Name: CenterArea
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -14963,7 +14797,7 @@ GameObject:
   - component: {fileID: 244569532}
   m_Layer: 0
   m_Name: Plane (29)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15359,6 +15193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -15772,7 +15611,7 @@ GameObject:
   - component: {fileID: 259401885}
   m_Layer: 0
   m_Name: Plane (102)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16613,6 +16452,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17033,7 +16877,7 @@ GameObject:
   - component: {fileID: 304335709}
   m_Layer: 0
   m_Name: Plane (23)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17245,6 +17089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17344,7 +17193,7 @@ GameObject:
   - component: {fileID: 318109653}
   m_Layer: 0
   m_Name: Plane (35)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17634,7 +17483,7 @@ GameObject:
   - component: {fileID: 321691675}
   m_Layer: 0
   m_Name: Plane (44)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17797,6 +17646,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -17899,7 +17753,7 @@ GameObject:
   - component: {fileID: 324636284}
   m_Layer: 0
   m_Name: Plane (74)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18033,7 +17887,7 @@ GameObject:
   - component: {fileID: 325473331}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18217,6 +18071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -18451,6 +18310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cart_Art (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
@@ -19115,7 +18979,7 @@ GameObject:
   - component: {fileID: 344887695}
   m_Layer: 0
   m_Name: Plane (20)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19358,6 +19222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -19784,7 +19653,7 @@ GameObject:
   - component: {fileID: 351230122}
   m_Layer: 0
   m_Name: Plane (15)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20074,6 +19943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -20183,7 +20057,7 @@ GameObject:
   - component: {fileID: 356607779}
   m_Layer: 0
   m_Name: Plane (80)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20342,7 +20216,7 @@ GameObject:
   - component: {fileID: 363265892}
   m_Layer: 0
   m_Name: Plane (71)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20448,7 +20322,7 @@ GameObject:
   - component: {fileID: 365749523}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21107,6 +20981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -21535,7 +21414,7 @@ GameObject:
   - component: {fileID: 383947088}
   m_Layer: 0
   m_Name: Plane (76)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21746,7 +21625,7 @@ GameObject:
   - component: {fileID: 387826306}
   m_Layer: 0
   m_Name: Plane (79)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22163,7 +22042,7 @@ GameObject:
   - component: {fileID: 393976284}
   m_Layer: 0
   m_Name: Plane (61)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22493,6 +22372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22572,6 +22456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -22601,7 +22490,7 @@ GameObject:
   - component: {fileID: 406313241}
   m_Layer: 0
   m_Name: Plane (30)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23169,6 +23058,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -23675,6 +23569,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -24840,7 +24739,7 @@ GameObject:
   - component: {fileID: 423265376}
   m_Layer: 0
   m_Name: Plane (141)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24944,6 +24843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -25695,7 +25599,7 @@ GameObject:
   - component: {fileID: 439504949}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26113,6 +26017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -26316,6 +26225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -26339,7 +26253,7 @@ GameObject:
   - component: {fileID: 447473369}
   m_Layer: 0
   m_Name: Plane (38)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26530,7 +26444,7 @@ GameObject:
   - component: {fileID: 453853853}
   m_Layer: 0
   m_Name: Plane (17)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26712,6 +26626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -26905,6 +26824,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -27034,6 +26958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -27131,6 +27060,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpeakerPost_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340327930535555928, guid: 13b1b4c8c71f1fd4799bd1c112ff3980,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 2340327930535555928, guid: 13b1b4c8c71f1fd4799bd1c112ff3980,
         type: 3}
@@ -27318,6 +27252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CenterPlatform_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514346370991017331, guid: 079bc2faec88e59479d1314c7f4f8061,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1514346370991017331, guid: 079bc2faec88e59479d1314c7f4f8061,
         type: 3}
@@ -27741,6 +27680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -27904,6 +27848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -28000,6 +27949,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -28477,7 +28431,7 @@ GameObject:
   - component: {fileID: 491357945}
   m_Layer: 0
   m_Name: Plane (108)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28583,7 +28537,7 @@ GameObject:
   - component: {fileID: 494373973}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28681,38 +28635,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 48508301}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &495536914
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495536915}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -0.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1295716150}
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &495536915
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 495536914}
-  m_Layer: 9
-  m_Name: End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &498002784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28775,6 +28697,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp_Art (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
         type: 3}
@@ -30429,6 +30356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -30509,6 +30441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: The Boss@Old Man Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eaca538fc984937458f590dc1b0400d1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: eaca538fc984937458f590dc1b0400d1,
         type: 3}
@@ -31663,6 +31600,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -31895,6 +31837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -33046,6 +32993,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -33324,6 +33276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -33411,7 +33368,7 @@ GameObject:
   - component: {fileID: 586290780}
   m_Layer: 0
   m_Name: Plane (116)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33546,6 +33503,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Signbook_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604664437619273390, guid: 49cd0a45b1e8f1d45ad57f7f5b8804b5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 3604664437619273390, guid: 49cd0a45b1e8f1d45ad57f7f5b8804b5,
         type: 3}
@@ -34253,6 +34215,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -34337,7 +34304,7 @@ GameObject:
   - component: {fileID: 597084759}
   m_Layer: 0
   m_Name: Props
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34377,7 +34344,7 @@ GameObject:
   - component: {fileID: 597868017}
   m_Layer: 0
   m_Name: Plane (52)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34598,6 +34565,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -35228,7 +35200,7 @@ GameObject:
   - component: {fileID: 619405036}
   m_Layer: 0
   m_Name: Plane (40)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35489,6 +35461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Booth_Food01_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909653555984108568, guid: ad7e42ca515a01b4ebe6867fd132fdba,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 2909653555984108568, guid: ad7e42ca515a01b4ebe6867fd132fdba,
         type: 3}
@@ -35840,7 +35817,7 @@ GameObject:
   - component: {fileID: 626956069}
   m_Layer: 0
   m_Name: Plane (87)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36164,6 +36141,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pretzel
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd291fbcf48403c418753694a8279842,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: bd291fbcf48403c418753694a8279842,
         type: 3}
       propertyPath: m_Controller
@@ -36270,6 +36252,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -36365,6 +36352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -36444,6 +36436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -36503,7 +36500,7 @@ GameObject:
   - component: {fileID: 648767752}
   m_Layer: 0
   m_Name: Plane (109)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36721,6 +36718,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -36855,6 +36857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -37116,6 +37123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SignPost_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533899753743309314, guid: 932a192c153a73e4f801466c9e6420c0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 2533899753743309314, guid: 932a192c153a73e4f801466c9e6420c0,
         type: 3}
@@ -37584,6 +37596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -37910,6 +37927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -38059,6 +38081,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -38191,6 +38218,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -38268,6 +38300,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Lamp_Art (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
         type: 3}
@@ -39080,6 +39117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -39863,6 +39905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -41059,7 +41106,7 @@ GameObject:
   - component: {fileID: 732718524}
   m_Layer: 0
   m_Name: Plane (97)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41508,6 +41555,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -41637,6 +41689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -41674,6 +41731,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -41839,6 +41901,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2464914755082597329, guid: 4a4f0912af5ed7749a4b69b2b6cc1dfd,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464914755082597329, guid: 4a4f0912af5ed7749a4b69b2b6cc1dfd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -41944,6 +42011,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -42017,7 +42089,7 @@ GameObject:
   - component: {fileID: 758464922}
   m_Layer: 0
   m_Name: Plane (70)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42121,6 +42193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -42298,6 +42375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -42380,6 +42462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -42516,6 +42603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balloon_Pretzel_Art (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
         type: 3}
@@ -42765,7 +42857,7 @@ GameObject:
   - component: {fileID: 772237390}
   m_Layer: 0
   m_Name: Plane (77)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42871,7 +42963,7 @@ GameObject:
   - component: {fileID: 778095762}
   m_Layer: 0
   m_Name: Plane (50)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43313,6 +43405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -44076,6 +44173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -44398,38 +44500,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 132704563}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &801044016
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 801044017}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1268399446}
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &801044017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 801044016}
-  m_Layer: 9
-  m_Name: Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1001 &802552340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44523,7 +44593,7 @@ GameObject:
   - component: {fileID: 803228674}
   m_Layer: 0
   m_Name: Plane (99)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44629,7 +44699,7 @@ GameObject:
   - component: {fileID: 809546502}
   m_Layer: 0
   m_Name: Plane (113)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44727,6 +44797,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2044338818}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &810320116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
+    type: 3}
+  m_PrefabInstance: {fileID: 1982987230231698223}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7068baf4d9988de41aa2083fa7a06839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &812491281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45380,6 +45462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3079945951059863908, guid: c062723cef508564299803debf240688,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079945951059863908, guid: c062723cef508564299803debf240688,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -45437,6 +45524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -45542,6 +45634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -45651,6 +45748,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_Dinner_Art (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
@@ -46167,6 +46269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -46500,7 +46607,7 @@ GameObject:
   - component: {fileID: 842671334}
   m_Layer: 0
   m_Name: Plane (65)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46741,6 +46848,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -46817,7 +46929,7 @@ GameObject:
   - component: {fileID: 852675604}
   m_Layer: 0
   m_Name: Plane (53)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46926,6 +47038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -47353,7 +47470,7 @@ GameObject:
   - component: {fileID: 862134368}
   m_Layer: 0
   m_Name: Plane (24)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47524,7 +47641,7 @@ GameObject:
   - component: {fileID: 865104621}
   m_Layer: 0
   m_Name: GameRoomProps
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48013,6 +48130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -49467,6 +49589,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -49501,7 +49628,7 @@ GameObject:
   - component: {fileID: 888901184}
   m_Layer: 0
   m_Name: Plane (126)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49607,7 +49734,7 @@ GameObject:
   - component: {fileID: 894507356}
   m_Layer: 0
   m_Name: Plane (131)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49796,7 +49923,7 @@ GameObject:
   - component: {fileID: 896762467}
   m_Layer: 0
   m_Name: Plane (135)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49931,6 +50058,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -50324,7 +50456,7 @@ GameObject:
   - component: {fileID: 903465325}
   m_Layer: 0
   m_Name: Plane (86)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51147,6 +51279,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -51583,6 +51720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -51640,7 +51782,7 @@ GameObject:
   - component: {fileID: 931215878}
   m_Layer: 0
   m_Name: -Pretzels
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52694,7 +52836,7 @@ GameObject:
   - component: {fileID: 942270539}
   m_Layer: 0
   m_Name: DaffodilTrio (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -52761,6 +52903,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -53007,7 +53154,7 @@ GameObject:
   - component: {fileID: 952041482}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53285,6 +53432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -53951,7 +54103,7 @@ GameObject:
   - component: {fileID: 972047694}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54551,7 +54703,7 @@ GameObject:
   - component: {fileID: 976716575}
   m_Layer: 0
   m_Name: Plane (128)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54830,7 +54982,7 @@ GameObject:
   - component: {fileID: 997994493}
   m_Layer: 0
   m_Name: BoundaryVegetation
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -55171,6 +55323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -55227,6 +55384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -55793,6 +55955,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -55895,6 +56062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -56140,6 +56312,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SignPost_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533899753743309314, guid: 932a192c153a73e4f801466c9e6420c0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 2533899753743309314, guid: 932a192c153a73e4f801466c9e6420c0,
         type: 3}
@@ -56779,7 +56956,7 @@ GameObject:
   - component: {fileID: 1034270534}
   m_Layer: 0
   m_Name: Plane (28)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57227,7 +57404,7 @@ GameObject:
   - component: {fileID: 1037460662}
   m_Layer: 0
   m_Name: Plane (119)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57645,6 +57822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -57831,6 +58013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -57989,7 +58176,7 @@ GameObject:
   - component: {fileID: 1050702110}
   m_Layer: 0
   m_Name: Plane (101)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58095,7 +58282,7 @@ GameObject:
   - component: {fileID: 1052172639}
   m_Layer: 0
   m_Name: Plane (33)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58204,6 +58391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -58381,6 +58573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -59114,7 +59311,7 @@ GameObject:
   - component: {fileID: 1072817033}
   m_Layer: 0
   m_Name: Plane (27)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59273,6 +59470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flags_Line_Art (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
@@ -59440,7 +59642,7 @@ GameObject:
   - component: {fileID: 1078248010}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59550,6 +59752,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -59793,6 +60000,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -59892,6 +60104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -59963,6 +60180,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Tree_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
         type: 3}
@@ -60162,6 +60384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8824464706168510261, guid: 9a0d5a349f9c04c4ebe9b4866201e268,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824464706168510261, guid: 9a0d5a349f9c04c4ebe9b4866201e268,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -60192,6 +60419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balloon_BeerMug_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6078207116443625455, guid: bcfda7255f0b9924f8a269f78f4082cc,
         type: 3}
@@ -60634,6 +60866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -60805,6 +61042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -60951,6 +61193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flags_Line_Art (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
@@ -61107,6 +61354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -61130,7 +61382,7 @@ GameObject:
   - component: {fileID: 1110491655}
   m_Layer: 0
   m_Name: Plane (120)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61236,7 +61488,7 @@ GameObject:
   - component: {fileID: 1112076389}
   m_Layer: 0
   m_Name: Plane (45)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61342,7 +61594,7 @@ GameObject:
   - component: {fileID: 1115128804}
   m_Layer: 0
   m_Name: Plane (103)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61722,7 +61974,7 @@ GameObject:
   - component: {fileID: 1122431545}
   m_Layer: 0
   m_Name: Plane (90)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62223,7 +62475,7 @@ GameObject:
   - component: {fileID: 1137885089}
   m_Layer: 0
   m_Name: Plane (98)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62329,7 +62581,7 @@ GameObject:
   - component: {fileID: 1140440773}
   m_Layer: 0
   m_Name: Plane (64)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62466,7 +62718,7 @@ GameObject:
   - component: {fileID: 1145183280}
   m_Layer: 0
   m_Name: Plane (25)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62883,7 +63135,7 @@ GameObject:
   - component: {fileID: 1152588450}
   m_Layer: 0
   m_Name: Plane (51)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63070,6 +63322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -63174,7 +63431,7 @@ GameObject:
   - component: {fileID: 1160527202}
   m_Layer: 0
   m_Name: Plane (111)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63280,7 +63537,7 @@ GameObject:
   - component: {fileID: 1161208975}
   m_Layer: 0
   m_Name: Plane (78)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63466,7 +63723,7 @@ GameObject:
   - component: {fileID: 1162421076}
   m_Layer: 0
   m_Name: Plane (69)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64051,6 +64308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2954823824624447290, guid: 194e9111af0c33840a49d573f2b26952,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954823824624447290, guid: 194e9111af0c33840a49d573f2b26952,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -64169,6 +64431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Tree_10 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
         type: 3}
@@ -64513,7 +64780,7 @@ GameObject:
   - component: {fileID: 1186698942}
   m_Layer: 0
   m_Name: Plane (140)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64617,6 +64884,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -65128,6 +65400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -65227,7 +65504,7 @@ GameObject:
   - component: {fileID: 1198095701}
   m_Layer: 0
   m_Name: Plane (92)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65336,6 +65613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -65646,6 +65928,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -65767,6 +66054,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -66189,7 +66481,7 @@ GameObject:
   - component: {fileID: 1223658381}
   m_Layer: 0
   m_Name: Plane (31)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66485,6 +66777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
@@ -67054,7 +67351,7 @@ GameObject:
   - component: {fileID: 1254888426}
   m_Layer: 0
   m_Name: Plane (32)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67161,6 +67458,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -67255,6 +67557,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -67328,7 +67635,7 @@ GameObject:
   - component: {fileID: 1259474295}
   m_Layer: 0
   m_Name: Plane (58)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67482,6 +67789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
@@ -67807,7 +68119,7 @@ GameObject:
   - component: {fileID: 1262700780}
   m_Layer: 0
   m_Name: Plane (95)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67919,6 +68231,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -68013,89 +68330,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1264008451}
   m_PrefabAsset: {fileID: 0}
---- !u!33 &1268399403
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268399447}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1268399444
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268399447}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1268399446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268399447}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.027728, y: 0.027728, z: 0.027728}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 801044016}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1268399447
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1268399446}
-  - component: {fileID: 1268399403}
-  - component: {fileID: 1268399444}
-  m_Layer: 9
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1268627310
 GameObject:
   m_ObjectHideFlags: 0
@@ -68427,6 +68661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -68640,7 +68879,7 @@ GameObject:
   - component: {fileID: 1270894045}
   m_Layer: 0
   m_Name: Plane (125)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69333,7 +69572,7 @@ GameObject:
   - component: {fileID: 1283402350}
   m_Layer: 0
   m_Name: Plane (21)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69470,7 +69709,7 @@ GameObject:
   - component: {fileID: 1288142249}
   m_Layer: 0
   m_Name: Plane (110)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69668,89 +69907,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1294858516}
   m_PrefabAsset: {fileID: 0}
---- !u!33 &1295716107
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295716151}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1295716148
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295716151}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1295716150
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295716151}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.027728567, y: 0.027728567, z: 0.027728567}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 495536914}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1295716151
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1295716150}
-  - component: {fileID: 1295716107}
-  - component: {fileID: 1295716148}
-  m_Layer: 9
-  m_Name: Sphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1299003848
 GameObject:
   m_ObjectHideFlags: 0
@@ -69765,7 +69921,7 @@ GameObject:
   - component: {fileID: 1299003850}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70037,7 +70193,7 @@ GameObject:
   - component: {fileID: 1304996167}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70573,6 +70729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -70615,6 +70776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -71502,7 +71668,7 @@ GameObject:
   - component: {fileID: 1338765262}
   m_Layer: 0
   m_Name: Plane (143)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72002,6 +72168,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457838305558991391, guid: c6c39731da0b13c41831862e6451238c,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -72032,6 +72203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -72190,6 +72366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -72216,6 +72397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -72329,6 +72515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8419323683467046899, guid: c0933311708fc8c439d15de0886c4908,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419323683467046899, guid: c0933311708fc8c439d15de0886c4908,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -72437,6 +72628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100982848878254697, guid: 001d6ca2b5ebc7648919f549414af117,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100982848878254697, guid: 001d6ca2b5ebc7648919f549414af117,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -72519,6 +72715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -72658,7 +72859,7 @@ GameObject:
   - component: {fileID: 1364770453}
   m_Layer: 0
   m_Name: -Beers-
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73027,7 +73228,7 @@ GameObject:
   - component: {fileID: 1371123997}
   m_Layer: 0
   m_Name: Plane (46)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73167,6 +73368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -73959,6 +74165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Erika Archer@Breathing Idle
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87eb670988b23794994fc338cf445c67,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 87eb670988b23794994fc338cf445c67,
         type: 3}
       propertyPath: m_Controller
@@ -73981,6 +74192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -74104,7 +74320,7 @@ GameObject:
   - component: {fileID: 1401503955}
   m_Layer: 0
   m_Name: Plane (66)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74208,6 +74424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -74372,7 +74593,7 @@ GameObject:
   - component: {fileID: 1407307294}
   m_Layer: 0
   m_Name: Plane (55)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74475,7 +74696,7 @@ GameObject:
   - component: {fileID: 1412281398}
   m_Layer: 0
   m_Name: GameRoom
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74566,6 +74787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -74647,6 +74873,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flags_Line_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
@@ -74970,7 +75201,7 @@ GameObject:
   - component: {fileID: 1422073666}
   m_Layer: 0
   m_Name: Plane (136)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75512,6 +75743,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -75536,9 +75772,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429452212}
+  - component: {fileID: 1429452213}
   m_Layer: 0
   m_Name: '****ENVIRONMENT****'
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75563,6 +75800,22 @@ Transform:
   - {fileID: 865104621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429452213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429452211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f4129fae0788a42b7fe9a3d897a4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _arrowPrefab: {fileID: 1769337597633466025, guid: 54ba44d4ecd83324991be29cf49b127d,
+    type: 3}
+  _environment: {fileID: 1429452212}
+  _pullInteraction: {fileID: 810320116}
 --- !u!1 &1430660575
 GameObject:
   m_ObjectHideFlags: 0
@@ -75678,7 +75931,7 @@ GameObject:
   - component: {fileID: 1434695574}
   m_Layer: 0
   m_Name: EnvironmentColliders
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75799,6 +76052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4861718553300456437, guid: e099c594214862849b2d25f8f7aebcf5,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4861718553300456437, guid: e099c594214862849b2d25f8f7aebcf5,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -75876,7 +76134,7 @@ GameObject:
   - component: {fileID: 1437594235}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76152,6 +76410,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -76223,6 +76486,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cart_Art (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
@@ -76310,6 +76578,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353202705191796829, guid: 1a3732f3f156de14589f6689fd793fbe,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -76338,7 +76611,7 @@ GameObject:
   - component: {fileID: 1450978058}
   m_Layer: 0
   m_Name: Plane (142)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76444,7 +76717,7 @@ GameObject:
   - component: {fileID: 1453650119}
   m_Layer: 0
   m_Name: Plane (81)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76550,7 +76823,7 @@ GameObject:
   - component: {fileID: 1454534858}
   m_Layer: 0
   m_Name: Plane (105)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76971,6 +77244,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -77794,7 +78072,7 @@ GameObject:
   - component: {fileID: 1464058777}
   m_Layer: 0
   m_Name: Plane (83)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77985,6 +78263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604664437619273390, guid: 49cd0a45b1e8f1d45ad57f7f5b8804b5,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604664437619273390, guid: 49cd0a45b1e8f1d45ad57f7f5b8804b5,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -78079,7 +78362,7 @@ GameObject:
   - component: {fileID: 1465445752}
   m_Layer: 0
   m_Name: DaffodilTrio
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -78252,6 +78535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -78351,7 +78639,7 @@ GameObject:
   - component: {fileID: 1481405185}
   m_Layer: 0
   m_Name: Plane (91)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78528,7 +78816,7 @@ GameObject:
   - component: {fileID: 1485935646}
   m_Layer: 0
   m_Name: FIreworks
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78600,6 +78888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -78848,6 +79141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_02 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
@@ -79262,6 +79560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -79285,7 +79588,7 @@ GameObject:
   - component: {fileID: 1501999921}
   m_Layer: 0
   m_Name: Plane (49)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79941,6 +80244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3752920753082020860, guid: a463278553b83d8449694baf16b5ac95,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 3752920753082020860, guid: a463278553b83d8449694baf16b5ac95,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -80075,6 +80383,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -80944,393 +81257,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1533223735
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1533223736}
-  - component: {fileID: 1533223739}
-  - component: {fileID: 1533223738}
-  - component: {fileID: 1533223737}
-  - component: {fileID: 1533223740}
-  m_Layer: 9
-  m_Name: BowString
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1533223736
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533223735}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.022, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1533223737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533223735}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7068baf4d9988de41aa2083fa7a06839, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 397637542}
-  m_Colliders:
-  - {fileID: 1533223738}
-  m_InteractionLayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_InteractionLayers:
-    m_Bits: 6
-  m_DistanceCalculationMode: 1
-  m_SelectMode: 0
-  m_FocusMode: 1
-  m_CustomReticle: {fileID: 0}
-  m_AllowGazeInteraction: 0
-  m_AllowGazeSelect: 0
-  m_OverrideGazeTimeToSelect: 0
-  m_GazeTimeToSelect: 0.5
-  m_OverrideTimeToAutoDeselectGaze: 0
-  m_TimeToAutoDeselectGaze: 3
-  m_AllowGazeAssistance: 0
-  m_FirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_HoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FirstSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1533223737}
-        m_TargetAssemblyTypeName: PullInteraction, Assembly-CSharp
-        m_MethodName: SetPullInteractor
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1533223737}
-        m_TargetAssemblyTypeName: PullInteraction, Assembly-CSharp
-        m_MethodName: Release
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_FirstFocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_LastFocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FocusExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Activated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Deactivated:
-    m_PersistentCalls:
-      m_Calls: []
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
-  m_StartingInteractionStrengthFilters: []
-  m_OnFirstHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnLastHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnHoverExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectExited:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelectCanceled:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnActivate:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnDeactivate:
-    m_PersistentCalls:
-      m_Calls: []
-  start: {fileID: 801044016}
-  end: {fileID: 495536914}
-  notch: {fileID: 225074640}
---- !u!65 &1533223738
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533223735}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.7039999, y: 0.0039999997, z: 0.0039999997}
-  m_Center: {x: 0, y: 0, z: -0.19999999}
---- !u!120 &1533223739
-LineRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533223735}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 63c5a2ff9cfb596498fbb6e31f48e702, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Positions:
-  - {x: -0.85, y: 0, z: -0.2}
-  - {x: 0, y: 0, z: -0.2}
-  - {x: 0.85, y: 0, z: -0.2}
-  m_Parameters:
-    serializedVersion: 3
-    widthMultiplier: 0.004
-    widthCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    colorGradient:
-      serializedVersion: 2
-      key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
-      key5: {r: 0, g: 0, b: 0, a: 0}
-      key6: {r: 0, g: 0, b: 0, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 0
-      ctime1: 65535
-      ctime2: 0
-      ctime3: 0
-      ctime4: 0
-      ctime5: 0
-      ctime6: 0
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_ColorSpace: -1
-      m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
-    alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
-    shadowBias: 0.5
-    generateLightingData: 0
-  m_MaskInteraction: 0
-  m_UseWorldSpace: 0
-  m_Loop: 0
-  m_ApplyActiveColorSpace: 1
---- !u!82 &1533223740
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533223735}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 015d57977df187e45a2efcebf5ed0cc4, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &1537049982
 GameObject:
   m_ObjectHideFlags: 0
@@ -82261,6 +82187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -82352,6 +82283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -82765,7 +82701,7 @@ GameObject:
   - component: {fileID: 1557472791}
   m_Layer: 0
   m_Name: Plane (57)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82919,6 +82855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Tree_10 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6846767348704259191, guid: 273b8f4150121d249ac7e2fd11da7005,
         type: 3}
@@ -83254,6 +83195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_Dinner_Art (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
@@ -85151,6 +85097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100982848878254697, guid: 001d6ca2b5ebc7648919f549414af117,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 7100982848878254697, guid: 001d6ca2b5ebc7648919f549414af117,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -85223,7 +85174,7 @@ GameObject:
   - component: {fileID: 1592112079}
   m_Layer: 0
   m_Name: Plane (115)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85744,7 +85695,7 @@ GameObject:
   - component: {fileID: 1608184188}
   m_Layer: 0
   m_Name: Plane (104)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86026,6 +85977,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -86065,6 +86021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -86478,6 +86439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -86629,6 +86595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SecondaryEntrance_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933366706225472828, guid: de40897857db9a54ab1f49c2e8d57612,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8933366706225472828, guid: de40897857db9a54ab1f49c2e8d57612,
         type: 3}
@@ -86811,7 +86782,7 @@ GameObject:
   - component: {fileID: 1631887231}
   m_Layer: 0
   m_Name: Plane (132)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86991,7 +86962,7 @@ GameObject:
   - component: {fileID: 1634787107}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87422,7 +87393,7 @@ GameObject:
   - component: {fileID: 1652796243}
   m_Layer: 0
   m_Name: Plane (14)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88492,7 +88463,7 @@ GameObject:
   - component: {fileID: 1658580734}
   m_Layer: 0
   m_Name: Plane (134)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88872,6 +88843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -88963,6 +88939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -89501,6 +89482,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -89530,7 +89516,7 @@ GameObject:
   - component: {fileID: 1689102870}
   m_Layer: 0
   m_Name: Plane (59)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89777,7 +89763,7 @@ GameObject:
   - component: {fileID: 1697527480}
   m_Layer: 0
   m_Name: Plane (47)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -89914,7 +89900,7 @@ GameObject:
   - component: {fileID: 1701461495}
   m_Layer: 0
   m_Name: Plane (22)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90192,7 +90178,7 @@ GameObject:
   - component: {fileID: 1704244981}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90744,6 +90730,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -91110,6 +91101,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -91257,6 +91253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
@@ -91518,6 +91519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -91598,6 +91604,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flags_Line_Art (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
@@ -91804,7 +91815,7 @@ GameObject:
   - component: {fileID: 1745260168}
   m_Layer: 0
   m_Name: -Sausages-
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91848,7 +91859,7 @@ GameObject:
   - component: {fileID: 1747229440}
   m_Layer: 0
   m_Name: Plane (42)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92007,6 +92018,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Flags_Line_Art (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8819752448901550190, guid: 4ab94505c5261d44e84013b0bc37b6bd,
         type: 3}
@@ -92585,7 +92601,7 @@ GameObject:
   - component: {fileID: 1754624228}
   m_Layer: 0
   m_Name: Plane (54)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92759,7 +92775,7 @@ GameObject:
   - component: {fileID: 1758367573}
   m_Layer: 0
   m_Name: Plane (96)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92862,7 +92878,7 @@ GameObject:
   - component: {fileID: 1767805356}
   m_Layer: 0
   m_Name: Entranceway
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -93236,7 +93252,7 @@ GameObject:
   - component: {fileID: 1771059525}
   m_Layer: 0
   m_Name: Plane (72)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93340,6 +93356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -93471,6 +93492,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -93912,6 +93938,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -94444,6 +94475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeerGame_Art
       objectReference: {fileID: 0}
+    - target: {fileID: 2494983507223820459, guid: dcd912848b08b7540b9ba6c20ff86a5b,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 3014076843494531601, guid: dcd912848b08b7540b9ba6c20ff86a5b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -94546,7 +94582,7 @@ GameObject:
   - component: {fileID: 1788142665}
   m_Layer: 0
   m_Name: Plane (41)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94964,6 +95000,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -95035,6 +95076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -95131,7 +95177,7 @@ GameObject:
   - component: {fileID: 1798735590}
   m_Layer: 0
   m_Name: Plane (139)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95265,7 +95311,7 @@ GameObject:
   - component: {fileID: 1808993637}
   m_Layer: 0
   m_Name: Plane (117)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95371,7 +95417,7 @@ GameObject:
   - component: {fileID: 1809770558}
   m_Layer: 0
   m_Name: Plane (26)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95475,6 +95521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Table_Dinner_Art (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 1345283094695502334, guid: 5e93eae9b87b5364aa3f9a991180c635,
         type: 3}
@@ -95988,6 +96039,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -96535,7 +96591,7 @@ GameObject:
   - component: {fileID: 1839118470}
   m_Layer: 0
   m_Name: Plane (13)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97203,7 +97259,7 @@ GameObject:
   - component: {fileID: 1853845022}
   m_Layer: 0
   m_Name: Plane (34)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97312,6 +97368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Beer_Mountain_Art (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
@@ -97472,6 +97533,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Booth_Food02_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 4142045385109628133, guid: a2aafd44677541345a2afdc32af1f14d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4142045385109628133, guid: a2aafd44677541345a2afdc32af1f14d,
         type: 3}
@@ -97812,7 +97878,7 @@ GameObject:
   - component: {fileID: 1858569973}
   m_Layer: 0
   m_Name: Plane (129)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98391,6 +98457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117661687684517428, guid: e02dd4776f2c2d34387043fb7128d2f0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -98573,7 +98644,7 @@ GameObject:
   - component: {fileID: 1881919319}
   m_Layer: 0
   m_Name: Plane (56)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98679,7 +98750,7 @@ GameObject:
   - component: {fileID: 1882881720}
   m_Layer: 0
   m_Name: Plane (114)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98994,6 +99065,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -99065,6 +99141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -99161,7 +99242,7 @@ GameObject:
   - component: {fileID: 1891727601}
   m_Layer: 0
   m_Name: Plane (43)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99665,6 +99746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -99770,6 +99856,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Barrel_Art (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
@@ -99882,6 +99973,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032642331417584291, guid: e133dac167ef59c40b7678ba58107c6a,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -99954,7 +100050,7 @@ GameObject:
   - component: {fileID: 1904455842}
   m_Layer: 0
   m_Name: Plane (127)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100060,7 +100156,7 @@ GameObject:
   - component: {fileID: 1907025352}
   m_Layer: 0
   m_Name: Plane (121)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100296,6 +100392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -100319,7 +100420,7 @@ GameObject:
   - component: {fileID: 1916595765}
   m_Layer: 0
   m_Name: Plane (93)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100425,7 +100526,7 @@ GameObject:
   - component: {fileID: 1918549603}
   m_Layer: 0
   m_Name: Plane (82)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100531,7 +100632,7 @@ GameObject:
   - component: {fileID: 1920321818}
   m_Layer: 0
   m_Name: Plane (89)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100686,6 +100787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sporty Granny@Drunk Idle Variation
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3719fd897041eeb43a9463ac6cec9b46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 3719fd897041eeb43a9463ac6cec9b46,
         type: 3}
       propertyPath: m_Controller
@@ -100763,6 +100869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -100893,7 +101004,7 @@ GameObject:
   - component: {fileID: 1925745877}
   m_Layer: 0
   m_Name: Plane (124)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101511,7 +101622,7 @@ GameObject:
   - component: {fileID: 1938356791}
   m_Layer: 0
   m_Name: Plane (67)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101853,6 +101964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -102026,6 +102142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -102155,6 +102276,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -102252,6 +102378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -102354,7 +102485,7 @@ GameObject:
   - component: {fileID: 1951258773}
   m_Layer: 0
   m_Name: Plane (19)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102605,7 +102736,7 @@ GameObject:
   - component: {fileID: 1967393472}
   m_Layer: 0
   m_Name: Plane (107)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103882,6 +104013,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752586314121210879, guid: 034023ff02a37fc47aab6bc6c49bf15b,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -103942,7 +104078,7 @@ GameObject:
   - component: {fileID: 1999105400}
   m_Layer: 0
   m_Name: Plane (100)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104064,6 +104200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Booth_Wearables_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 182545215223278437, guid: c1b2572c190d7cf4ca4c870f392226fa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 182545215223278437, guid: c1b2572c190d7cf4ca4c870f392226fa,
         type: 3}
@@ -104483,6 +104624,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -105801,7 +105947,7 @@ GameObject:
   - component: {fileID: 2041753967}
   m_Layer: 0
   m_Name: Plane (48)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105958,6 +106104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205140200323715434, guid: 082513a941165514aac538d6b7401ac0,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -106016,7 +106167,7 @@ GameObject:
   - component: {fileID: 2044592667}
   m_Layer: 0
   m_Name: Plane (73)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106219,6 +106370,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -106868,6 +107024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2340327930535555928, guid: 13b1b4c8c71f1fd4799bd1c112ff3980,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340327930535555928, guid: 13b1b4c8c71f1fd4799bd1c112ff3980,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -107362,6 +107523,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -107512,6 +107678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071797058752378695, guid: 54c638a5c81b37d4a864af21dfca7442,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -107537,7 +107708,7 @@ GameObject:
   - component: {fileID: 2074420522}
   m_Layer: 0
   m_Name: Planes
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108117,6 +108288,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -108452,6 +108628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balloon_Pants_Art
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824464706168510261, guid: 9a0d5a349f9c04c4ebe9b4866201e268,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 8824464706168510261, guid: 9a0d5a349f9c04c4ebe9b4866201e268,
         type: 3}
@@ -109023,6 +109204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 5914117016913684118, guid: 714a861428b556548ab7441ff6431cac,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -109195,7 +109381,7 @@ GameObject:
   - component: {fileID: 2098501302}
   m_Layer: 0
   m_Name: Plane (106)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109301,7 +109487,7 @@ GameObject:
   - component: {fileID: 2099181455}
   m_Layer: 0
   m_Name: Plane (130)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109588,6 +109774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Peasant Girl@Dwarf Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 44415dd831df7f545b2b3455ff56bd36,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 44415dd831df7f545b2b3455ff56bd36,
         type: 3}
@@ -109927,6 +110118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -110373,7 +110569,7 @@ GameObject:
   - component: {fileID: 2109678226}
   m_Layer: 0
   m_Name: Plane (68)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110477,6 +110673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Balloon_Interactible_Red_Art (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464914755082597329, guid: 4a4f0912af5ed7749a4b69b2b6cc1dfd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 2464914755082597329, guid: 4a4f0912af5ed7749a4b69b2b6cc1dfd,
         type: 3}
@@ -110658,7 +110859,7 @@ GameObject:
   - component: {fileID: 2115367757}
   m_Layer: 0
   m_Name: Plane (137)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110823,6 +111024,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StageBackGround_Art (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 6785252205524576044, guid: 282e17ae65b681a44af65c99a0495f7e,
         type: 3}
@@ -111414,7 +111620,7 @@ GameObject:
   - component: {fileID: 2125940403}
   m_Layer: 0
   m_Name: tt
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111827,7 +112033,7 @@ GameObject:
   - component: {fileID: 2127109453}
   m_Layer: 0
   m_Name: DaffodilTrio (1)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -112087,6 +112293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -112180,7 +112391,7 @@ GameObject:
   - component: {fileID: 2138885623}
   m_Layer: 0
   m_Name: Plane (94)
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112284,6 +112495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -112472,6 +112688,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
         type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4640847448810979699, guid: 3edf87af5519ff9478db0a19c40cfaaf,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -112578,6 +112799,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Forest_Mountain_Moss_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
+        type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 200864487664385347, guid: 512b72c73a22e904d87662ebca8eb1e1,
         type: 3}
@@ -113001,49 +113227,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &133241718707786952
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934756542431147293}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -7098565394360792512, guid: f49798a7b92528f4ea16cc479bedd5dd, type: 3}
-  - {fileID: -1444460858095362738, guid: f49798a7b92528f4ea16cc479bedd5dd, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &138042965749986442
 Transform:
   m_ObjectHideFlags: 0
@@ -113803,21 +113986,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1266200337392922535
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934756542431147293}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.083522, y: 4.083522, z: 4.083522}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 9008461865426577839}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &1330348121725977518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114396,25 +114564,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!1 &1934756542431147293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266200337392922535}
-  - component: {fileID: 2755545372910149634}
-  - component: {fileID: 133241718707786952}
-  - component: {fileID: 151460208}
-  m_Layer: 0
-  m_Name: PlankBow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &1978152499849315355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114567,6 +114716,99 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!1001 &1982987230231698223
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: _arrowPrefab
+      value: 
+      objectReference: {fileID: 6834101762265781234, guid: 54ba44d4ecd83324991be29cf49b127d,
+        type: 3}
+    - target: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: _trajectoryLine
+      value: 
+      objectReference: {fileID: 1429452213}
+    - target: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 397637542}
+    - target: {fileID: 4699802608331270003, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_Name
+      value: Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.315098
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264798673001284017, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7303552897896582841, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 397637542}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4699802608331270003, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9008461865426577841}
+  m_SourcePrefab: {fileID: 100100000, guid: 40e3f82de854b754795184019d7e1c60, type: 3}
 --- !u!65 &2083266791561683003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -115231,14 +115473,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddd95815ccc24ae41a31d71b4da918e4, type: 3}
---- !u!33 &2755545372910149634
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934756542431147293}
-  m_Mesh: {fileID: 4493585093827132993, guid: f49798a7b92528f4ea16cc479bedd5dd, type: 3}
 --- !u!1 &2777120810809122274
 GameObject:
   m_ObjectHideFlags: 0
@@ -115562,25 +115796,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7168167772571880332}
   m_LocalEulerAnglesHint: {x: 60.717, y: -90, z: 0}
---- !u!1 &3701202431134241889
+--- !u!1 &3701202431134241889 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4699802608331270003, guid: 40e3f82de854b754795184019d7e1c60,
+    type: 3}
+  m_PrefabInstance: {fileID: 1982987230231698223}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9008461865426577839}
-  - component: {fileID: 151460209}
-  - component: {fileID: 151460207}
-  - component: {fileID: 151460214}
-  m_Layer: 9
-  m_Name: Bow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!54 &3768019780161325627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -118493,27 +118714,110 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9008461865426577839
-Transform:
+--- !u!120 &9008461865426577841
+LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3701202431134241889}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.315098, y: 0.766, z: 3.067}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1266200337392922535}
-  - {fileID: 113266925}
-  - {fileID: 801044016}
-  - {fileID: 495536914}
-  - {fileID: 225074647}
-  - {fileID: 1533223736}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
 --- !u!23 &9021154926242458572
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -119046,7 +119350,7 @@ SceneRoots:
   - {fileID: 750461581}
   - {fileID: 1844656653}
   - {fileID: 817455826}
-  - {fileID: 9008461865426577839}
+  - {fileID: 1982987230231698223}
   - {fileID: 3571338732708174749}
   - {fileID: 193155636}
   - {fileID: 1261906178}
