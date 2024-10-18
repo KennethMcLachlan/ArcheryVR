@@ -20,7 +20,6 @@ public class TrajectoryLine : MonoBehaviour
 
     [SerializeField] private PullInteraction _pullInteraction;
 
-    private Arrow _simulatedArrow;
     void Start()
     {
         //Set the Bow reference
@@ -68,29 +67,18 @@ public class TrajectoryLine : MonoBehaviour
 
     public void SimulatedTrajectory(Arrow arrow, Vector3 pos, Vector3 pullPosition)
     {
-        if (_simulatedArrow == null)
-        {
+        //Reference for a simulated arrow - Should this be referenced here?
+        var simulatedArrow = Instantiate(arrow, pos, Quaternion.identity);
 
+        //simulated object renderer is disabled
+        simulatedArrow.GetComponentInChildren<Renderer>().enabled = false;
 
-            //Reference for a simulated arrow - Should this be referenced here?
-            var simulatedArrow = Instantiate(arrow, pos, Quaternion.identity);
+        //Move the simulated object to the simulated physics scene
+        SceneManager.MoveGameObjectToScene(simulatedArrow.gameObject, _simulatedScene);
 
-            //Disable child objects of the arrow
-
-            //simulated object renderer is disabled
-            simulatedArrow.GetComponentInChildren<Renderer>().enabled = false;
-
-            //Move the simulated object to the simulated physics scene
-            SceneManager.MoveGameObjectToScene(simulatedArrow.gameObject, _simulatedScene);
-
-            //apply velocity to the simulated object
-
-            //PullInteraction pullInteraction = new PullInteraction();
-            //pullInteraction = GameObject.Find("****ENVIRONMENT****".GetComponent<PullInteraction>();
-        }
+        //apply velocity to the simulated object
         _pullInteraction.CalculatePull(pullPosition);
-
-        //simulatedArrow.pullInteraction.CalculatePull(pullPosition);
+        simulatedArrow.pullInteraction.CalculatePull(pullPosition);
     }
 
 }
