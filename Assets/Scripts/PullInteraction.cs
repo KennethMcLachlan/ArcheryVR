@@ -30,11 +30,12 @@ public class PullInteraction : XRBaseInteractable
 
     private bool _arrowIsSpawned;
 
+    //[SerializeField] private LineRenderer _trajectoryLineRenderer;
     //Reference for the Line Renderer (Trajectory)
-    [SerializeField] private LineRenderer _line;
+    //[SerializeField] private LineRenderer _line;
 
     //Reference to the simulated Physics Script (TrajectoryLine
-    [SerializeField] private TrajectoryLine _trajectoryLine;
+    //[SerializeField] private TrajectoryLine _trajectoryLine;
 
     [SerializeField] private Arrow _arrowPrefab;
 
@@ -49,6 +50,7 @@ public class PullInteraction : XRBaseInteractable
     private void Start()
     {
         _arrowSpawner = GameObject.Find("Bow").GetComponent<ArrowSpawner>();
+        //_arrow = GetComponent<Arrow>();
     }
 
     //Is called on in OnSelectEntered
@@ -66,6 +68,15 @@ public class PullInteraction : XRBaseInteractable
         {
             PullActionReleased?.Invoke(pullAmount);
 
+            //Vector3 arrowStartPos = notch.transform.position;
+            //Vector3 aimDirection = notch.transform.forward;
+            //Vector3 projectedForce = _arrowPrefab.GetProjectedForce(pullAmount);
+
+            //if (_arrowIsSpawned == true)
+            //{
+            //    _trajectoryLine.SimulateTrajectory(arrowStartPos, projectedForce);
+            //}
+
             _pullingInteractor = null;
             pullAmount = 0f; //Set to 0 because the BowString is no longer being pulled on
 
@@ -74,6 +85,7 @@ public class PullInteraction : XRBaseInteractable
 
             PlayReleaseAudio();
 
+            //_trajectoryLine.ClearTrajectory();
             _arrowIsSpawned = false;
         }
     }
@@ -104,6 +116,8 @@ public class PullInteraction : XRBaseInteractable
 
                 UpdateString();
 
+                //SimulateTrajectory();
+
             }
 
         }
@@ -130,9 +144,19 @@ public class PullInteraction : XRBaseInteractable
         notch.transform.localPosition = new Vector3(notch.transform.localPosition.x, notch.transform.localPosition.y, linePosition.z + 0.2f);
         _lineRenderer.SetPosition(1, linePosition);
 
-        _trajectoryLine.SimulatedTrajectory(_arrowPrefab, transform.position, transform.forward * pullAmount);
+        //_trajectoryLineRenderer.SetPosition(0, notch.transform.position);
+        //Vector3 pullPosition = GetPullPosition();
+        //Vector3 arrowDirection = transform.forward;
+        //_trajectoryLine.SimulatedTrajectory(_arrowPrefab, transform.position, transform.forward * pullAmount);
 
     }
+
+    //public void SimulateTrajectory()
+    //{
+    //    Vector3 arrowStartPos = notch.transform.position;
+    //    Vector3 projectedForce = _arrowPrefab.GetProjectedForce(pullAmount);
+    //    _trajectoryLine.SimulateTrajectory(arrowStartPos, projectedForce);
+    //}
 
     private void HapticFeedback()
     {

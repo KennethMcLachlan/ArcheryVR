@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using static UnityEngine.XR.Interaction.Toolkit.XRInteractionUpdateOrder;
 using UnityEngine.XR.Interaction.Toolkit;
 using System;
+using JetBrains.Annotations;
 
 public class TrajectoryLine : MonoBehaviour
 {
@@ -15,70 +16,49 @@ public class TrajectoryLine : MonoBehaviour
 
     [SerializeField] private GameObject _arrowPrefab;
 
-    //Create reference to the Bow (Maybe)
-    [SerializeField] private Transform _environment;
+    //Create reference to the environment for the simulated space
+    //[SerializeField] private Transform _environment;
 
     [SerializeField] private PullInteraction _pullInteraction;
 
+    //Trajectory Line Variables
+    //[SerializeField] private GameObject _bowString; // Holds the Trajectory line start position
+    [SerializeField] private LineRenderer _lineRenderer;
+    [SerializeField] private int _maxPhysicsIterations;
+
     void Start()
     {
-        //Set the Bow reference
-        _environment = gameObject.transform; // Like the lab parent in the video (GDHQ)
-
-        //Call the Create Simulated Physics Scene Method
-        CreateSimulatedPhysicsScene();
-
-        _pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
-    }
-
-    void Update()
-    {
-        
-    }
-
-    //Creates the Trajectory Line Scene
-    void CreateSimulatedPhysicsScene()
-    {
-        _simulatedScene = SceneManager.CreateScene("TrajectoryLine", new CreateSceneParameters(LocalPhysicsMode.Physics3D));
-        _physicsScene = _simulatedScene.GetPhysicsScene();
-
-        //ForEach object tagged as arrow - Do I need to do the whole environment and not the arrow?
-        foreach (Transform objects in _environment)
+        _lineRenderer.GetComponent<LineRenderer>();
+        if (_lineRenderer == null)
         {
-            if (objects.CompareTag("Environment"))
-            {
-                //Instantiates an arrow based on the Tag
-                var simulatedObjects = Instantiate(objects.gameObject, objects.position, objects.rotation);
-                if (objects.GetComponentInChildren<Renderer>() != null)
-                {
-                    objects.GetComponentInChildren<Renderer>().enabled = false;
-
-                    //Remove Script
-                    //objects.GetComponent<Arrow>().enabled = false;
-                }
-                SceneManager.MoveGameObjectToScene(simulatedObjects, _simulatedScene);
-            }
+            Debug.LogError("Line Renderer is null");
         }
-        //Create a reference to the simulated obstacles
-        //GetMeshRenderer of each obstacle and disable it
-        //Move GameObjects to the new simulated physic scene
-
     }
 
-    public void SimulatedTrajectory(Arrow arrow, Vector3 pos, Vector3 pullPosition)
+    public void SimulateTrajectory(Vector3 startPosition, Vector3 initialVelocity)
     {
-        //Reference for a simulated arrow - Should this be referenced here?
-        var simulatedArrow = Instantiate(arrow, pos, Quaternion.identity);
+        Vector3 currentPosition = startPosition;
+        Vector3 currentVelocity = initialVelocity;
 
-        //simulated object renderer is disabled
-        simulatedArrow.GetComponentInChildren<Renderer>().enabled = false;
+        // Set the number of points in the Line Renderer
+        _lineRenderer.positionCount = _maxPhysicsIterations;
 
-        //Move the simulated object to the simulated physics scene
-        SceneManager.MoveGameObjectToScene(simulatedArrow.gameObject, _simulatedScene);
+        for (int i = 0; i < _maxPhysicsIterations; i++)
+        {
+            // Store the current position
+            _lineRenderer.SetPosition(i, currentPosition);
 
-        //apply velocity to the simulated object
-        _pullInteraction.CalculatePull(pullPosition);
-        simulatedArrow.pullInteraction.CalculatePull(pullPosition);
+            // Apply gravity to the velocity
+            currentVelocity += Physics.gravity * Time.fixedDeltaTime;
+
+            // Update the position based on the velocity
+            currentPosition += currentVelocity * Time.fixedDeltaTime;
+        }
+    }
+
+    public void ClearTrajectory()
+    {
+        _lineRenderer.positionCount = 0;
     }
 
 }

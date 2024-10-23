@@ -22,6 +22,8 @@ public class Arrow : MonoBehaviour
 
     public PullInteraction pullInteraction;
 
+    //[SerializeField] private float _trajectoryAlignment = 2;
+
     
     private void Awake()
     {
@@ -62,10 +64,18 @@ public class Arrow : MonoBehaviour
         StartCoroutine(RotateWithVelocity());
         _lastPosition = tip.position;
 
+        //TrajectoryLine trajectoryLine = FindObjectOfType<TrajectoryLine>();
+        //trajectoryLine.SimulateTrajectory(transform.position, force);
+
         //VFX
         //_particleSystem.Play();
         _trailRenderer.emitting = true;
     }
+
+    //public Vector3 GetProjectedForce(float pullValue) // *****Recent Addition****
+    //{
+    //    return transform.forward * pullValue * speed /* * _trajectoryAlignment;*/;
+    //}
 
     private IEnumerator RotateWithVelocity() // Allows the arrow to rotate in unison with projection
     {

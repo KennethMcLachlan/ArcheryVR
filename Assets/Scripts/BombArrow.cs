@@ -161,9 +161,9 @@ public class BombArrow : MonoBehaviour
                     if (rigidbody != null)
                     {
                         TargetBehavior targetProp = rigidbody.GetComponent<TargetBehavior>();
-                        rigidbody.AddExplosionForce(explosiveForce, tip.transform.position, explosiveRadius, upwardsModifier, ForceMode.Impulse);
                         rigidbody.useGravity = true;
                         rigidbody.isKinematic = false;
+                        rigidbody.AddExplosionForce(explosiveForce, tip.transform.position, explosiveRadius, upwardsModifier, ForceMode.Impulse);
                         
                         if (targetProp != null)
                         {
