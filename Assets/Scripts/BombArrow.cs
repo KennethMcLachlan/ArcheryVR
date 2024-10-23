@@ -145,7 +145,7 @@ public class BombArrow : MonoBehaviour
                         }
                         else
                         {
-                            Debug.LogError("PullInteraion is null ion Arrow Script");
+                            Debug.LogError("PullInteraction is null in Arrow Script");
                         }
                         StartCoroutine(BombDurationRoutine());
 
