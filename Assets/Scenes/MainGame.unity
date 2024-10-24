@@ -20030,7 +20030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &339193998
 Transform:
   m_ObjectHideFlags: 0
@@ -20040,7 +20040,7 @@ Transform:
   m_GameObject: {fileID: 339193997}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -2.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44565,7 +44565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &746742937
 Transform:
   m_ObjectHideFlags: 0
@@ -54470,7 +54470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &910250288
 Transform:
   m_ObjectHideFlags: 0
@@ -62802,6 +62802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053803295}
+  - component: {fileID: 1053803296}
   m_Layer: 0
   m_Name: '****ARCHERYSPACE****'
   m_TagString: Untagged
@@ -62825,6 +62826,44 @@ Transform:
   - {fileID: 492432374}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053803296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053803294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78680fcd2d1545c4cbfb6ab97865d731, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetGroupStill01: {fileID: 1101416567}
+  _targetGroupStill02: {fileID: 1668188719}
+  _targetGroupStill03: {fileID: 746742936}
+  _targetGroupStill04: {fileID: 910250287}
+  _targetGroupScatter: {fileID: 355062508}
+  _targetGroupDownLeft01: {fileID: 156244798}
+  _targetGroupDownLeft02: {fileID: 11291903}
+  _targetGroupDownRight01: {fileID: 823632733}
+  _targetGroupDownRight02: {fileID: 1609037981}
+  _targetGroupDownRight03: {fileID: 87831651}
+  _targetGroupDiamondRight: {fileID: 558546966}
+  _targetGroupDiamondLeft: {fileID: 1199549906}
+  _targetGroup3Stacks: {fileID: 1199174759}
+  _targetGroupPyramid: {fileID: 705990374}
+  _targetGroupPyramidFlip: {fileID: 1082086589}
+  _targetGroupW: {fileID: 1998348193}
+  _rainingTargets: {fileID: 1462892435}
+  _topSideToSide: {fileID: 513620723}
+  _middleSideToSide: {fileID: 504874270}
+  _bottomSideToSide: {fileID: 1367673053}
+  _topOneWayRight: {fileID: 1638962335}
+  _middleOneWayRight: {fileID: 1983037142}
+  _bottomOneWayRight: {fileID: 2099605978}
+  _topOneWayLeft: {fileID: 80568848}
+  _middleOneWayLeft: {fileID: 501204439}
+  _bottomOneWayLeft: {fileID: 674911811}
 --- !u!1001 &1053836137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65748,7 +65787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1101416568
 Transform:
   m_ObjectHideFlags: 0
@@ -95546,7 +95585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1668188720
 Transform:
   m_ObjectHideFlags: 0
