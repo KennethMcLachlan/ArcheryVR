@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 7494067923381634140}
   - component: {fileID: 5879213591708821276}
   - component: {fileID: 9196594943534859742}
+  - component: {fileID: -2003239332750842248}
   m_Layer: 10
   m_Name: TargetContainer
   m_TagString: Untagged
@@ -310,6 +311,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hitSFX: {fileID: 5879213591708821276}
+--- !u!95 &-2003239332750842248
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4994829964740891358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07035f8b166b7174d897b4c3acfb226f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8529793216785788874
 GameObject:
   m_ObjectHideFlags: 0

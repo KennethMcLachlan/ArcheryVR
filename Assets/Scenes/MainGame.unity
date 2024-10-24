@@ -44592,7 +44592,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 746742936}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 7889986faadf54f499945428d177fc45, type: 2}
   m_CullingMode: 0
@@ -54497,7 +54497,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910250287}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 07035f8b166b7174d897b4c3acfb226f, type: 2}
   m_CullingMode: 0
@@ -65814,7 +65814,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101416567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b938917da0e9f4a479f8d4392d9f22af, type: 2}
   m_CullingMode: 0
@@ -95612,7 +95612,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1668188719}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 07035f8b166b7174d897b4c3acfb226f, type: 2}
   m_CullingMode: 0
@@ -123286,7 +123286,12 @@ PrefabInstance:
     - target: {fileID: 540883444050226757, guid: 40e3f82de854b754795184019d7e1c60,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.028
+      objectReference: {fileID: 0}
+    - target: {fileID: 540883444050226757, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
         type: 3}

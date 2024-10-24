@@ -65,7 +65,7 @@ public class ArcheryGameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(_three);
 
-            //Starter Set
+            ////Starter Set
             _targetGroupScatter.SetActive(true);
             yield return new WaitForSeconds(_nine);
             _targetGroupScatter.SetActive(false);
@@ -73,23 +73,23 @@ public class ArcheryGameManager : MonoBehaviour
 
             //Four Corners
             _targetGroupStill01.SetActive(true);
-            yield return new WaitForSeconds(_five);
+            yield return new WaitForSeconds(_three);
             _targetGroupStill02.SetActive(true);
-            yield return new WaitForSeconds(_nine);
+            yield return new WaitForSeconds(_five);
             _targetGroupStill01.SetActive(false);
             _targetGroupStill03.SetActive(true);
-            yield return new WaitForSeconds(_nine);
+            yield return new WaitForSeconds(_five);
             _targetGroupStill02.SetActive(false);
             _targetGroupStill04.SetActive(true);
-            yield return new WaitForSeconds(_nine);
+            yield return new WaitForSeconds(_five);
             _targetGroupStill03.SetActive(false);
-            yield return new WaitForSeconds(_nine);
+            yield return new WaitForSeconds(_five);
             _targetGroupStill04.SetActive(false);
             yield return new WaitForSeconds(_three);
 
             //W Shape Break
             _targetGroupW.SetActive(true);
-            yield return new WaitForSeconds(_nine);
+            yield return new WaitForSeconds(_ten);
             _targetGroupW.SetActive(false);
             yield return new WaitForSeconds(_three);
 
@@ -99,11 +99,11 @@ public class ArcheryGameManager : MonoBehaviour
             _topSideToSide.SetActive(true);
             yield return new WaitForSeconds(_two);
             _bottomSideToSide.SetActive(true);
-            yield return new WaitForSeconds(_six);
+            yield return new WaitForSeconds(_five);
             _middleSideToSide.SetActive(false);
-            yield return new WaitForSeconds(_six);
+            yield return new WaitForSeconds(_five);
             _topSideToSide.SetActive(false);
-            yield return new WaitForSeconds(_six);
+            yield return new WaitForSeconds(_five);
             _bottomSideToSide.SetActive(false);
             yield return new WaitForSeconds(_three);
 
@@ -130,12 +130,60 @@ public class ArcheryGameManager : MonoBehaviour
             _targetGroupDownRight01.SetActive(false);
             _targetGroupDownRight03.SetActive(true);
             yield return new WaitForSeconds(_two);
-            _targetGroupDownLeft02.SetActive(true);
+            //_targetGroupDownLeft02.SetActive(true);
             _targetGroupDownRight02.SetActive(false);
-            yield return new WaitForSeconds(_six);
+            yield return new WaitForSeconds(_four);
             _targetGroupDownRight03.SetActive(false);
             yield return new WaitForSeconds(_three);
 
+            //Target Left Movement
+            _bottomOneWayLeft.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _middleOneWayLeft.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _topOneWayLeft.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _bottomOneWayLeft.SetActive(false);
+            yield return new WaitForSeconds(_one);
+            _middleOneWayLeft.SetActive(false);
+            yield return new WaitForSeconds(_one);
+            _topOneWayLeft.SetActive(false);
+            yield return new WaitForSeconds(_three);
+
+            //Diamond Shapes
+            _targetGroupDiamondRight.SetActive(true);
+            yield return new WaitForSeconds(_four);
+            _targetGroupDiamondLeft.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _targetGroupDiamondRight.SetActive(false);
+            yield return new WaitForSeconds(_four);
+            _targetGroupDiamondLeft.SetActive(false);
+            yield return new WaitForSeconds(_three);
+
+            //Target Right Movement
+            _topOneWayRight.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _middleOneWayRight.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _bottomOneWayRight.SetActive(true);
+            yield return new WaitForSeconds(_one);
+            _topOneWayRight.SetActive(false);
+            yield return new WaitForSeconds(_one);
+            _middleOneWayRight.SetActive(false);
+            yield return new WaitForSeconds(_one);
+            _bottomOneWayRight.SetActive(false);
+            yield return new WaitForSeconds(_three);
+
+            //Pyramid Stack Flipped
+            _targetGroupPyramidFlip.SetActive(true);
+            yield return new WaitForSeconds(_eight);
+            _targetGroupPyramidFlip.SetActive(false);
+
+            //Raining Targets
+            _rainingTargets.SetActive(true);
+            yield return new WaitForSeconds(25f);
+
+            //Game Over
             _gameIsActive = false;
 
             
