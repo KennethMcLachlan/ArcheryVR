@@ -182,6 +182,7 @@ public class ArcheryGameManager : MonoBehaviour
             //Raining Targets
             _rainingTargets.SetActive(true);
             yield return new WaitForSeconds(25f);
+            _rainingTargets.SetActive(false);
 
             //Game Over
             _gameIsActive = false;

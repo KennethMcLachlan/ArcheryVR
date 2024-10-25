@@ -24,10 +24,31 @@ public class BombArrow : MonoBehaviour
     public float upwardsModifier = 5.0f;
     public bool _bombIsActive;
 
+    //Bomb Behavior
+    [SerializeField] private GameObject _explosionPFX;
+    private Transform _player;
+    [SerializeField] private AudioSource _explosionSFX;
+
     public PullInteraction pullInteraction;
     private void Awake()
     {
+        _player = GameObject.FindGameObjectWithTag("Player").transform;
+        if (_player == null)
+        {
+            Debug.LogError("Player is null in the Bomb Arrow Script");
+        }
+
         pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
+        if (pullInteraction == null)
+        {
+            Debug.LogError("Pull Interaction is null on the Bomb Arrow Script");
+        }
+
+        _explosionSFX = GetComponent<AudioSource>();
+        if (_explosionSFX == null)
+        {
+            Debug.LogError("_explosionSFX is Null");
+        }
 
         _rigidbody = GetComponent<Rigidbody>();
         PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
@@ -100,14 +121,19 @@ public class BombArrow : MonoBehaviour
         {
             if (hitInfo.transform.gameObject.layer != 9) //Ensures the arrow ignores the Player's body (Layer 9)
             {
+                //Explosion Faces the Player
+                Vector3 explosionPoint = hitInfo.point;
+                Vector3 directionToPlayer = (_player.position - explosionPoint).normalized;
+                Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
+                Quaternion endRotation = lookRotation * Quaternion.Euler(-90, 0, 0);
+                Instantiate(_explosionPFX, explosionPoint, endRotation);
+                _explosionSFX.Play();
+
                 //Arrows can be applied to anything with a Rigidbody except for the player
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body)) // if there's a Rigidbody
                 {
                     _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation. No Jitter is noticeable and reduces memory usage
                     transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
-
-                    //_targetBehavior.UpdateForceValue(_forceValue); Deemed Uneccesary
-
                 }
 
                 //Regular Arrow hit
@@ -199,6 +225,7 @@ public class BombArrow : MonoBehaviour
                 }
 
                 StopFunctions();
+                StartCoroutine(DestroyBombArrowRoutine());
             }
         }
     }
@@ -223,6 +250,12 @@ public class BombArrow : MonoBehaviour
     {
         _rigidbody.useGravity = usePhysics;
         _rigidbody.isKinematic = !usePhysics;
+    }
+
+    private IEnumerator DestroyBombArrowRoutine()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
     }
 
 }
