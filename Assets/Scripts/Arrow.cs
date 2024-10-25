@@ -158,6 +158,7 @@ public class Arrow : MonoBehaviour
                 }
 
                 StopFunctions();
+                StartCoroutine(DestroyArrowRoutine());
             }
         }
     }
@@ -178,4 +179,9 @@ public class Arrow : MonoBehaviour
         _rigidbody.isKinematic = !usePhysics;
     }
 
+    private IEnumerator DestroyArrowRoutine()
+    {
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
+    }
 }
