@@ -52,6 +52,8 @@ public class ArcheryGameManager : MonoBehaviour
     //CountDown Text
     [SerializeField] private TMP_Text _countdownText;
 
+    private Coroutine _gameCoroutine;
+
     private void Start()
     {
         _countdownText.text = "";
@@ -59,15 +61,14 @@ public class ArcheryGameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            _gameIsActive = true;
-            StartCoroutine(GameStartRoutine());
-        }
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    _gameIsActive = true;
+        //    StartCoroutine(GameStartRoutine());
+        //}
     }
     private IEnumerator GameStartRoutine()
     {
-        //Set Start Timer
 
         while (_gameIsActive == true)
         {
@@ -212,10 +213,26 @@ public class ArcheryGameManager : MonoBehaviour
     {
         _gameIsActive = true;
         UIManager.Instance.ResetScore();
+        _gameCoroutine = StartCoroutine(GameStartRoutine());
+        Debug.Log("Game Start was called from the Button Push");
     }
 
     public void EndGame()
     {
         _gameIsActive = false;
+        if (_gameCoroutine != null)
+        {
+            StopCoroutine(_gameCoroutine);
+            _gameCoroutine = null;
+            _countdownText.text = "";
+
+            GameObject[] remainingTargets = GameObject.FindGameObjectsWithTag("TargetGroup");
+            foreach (GameObject target in remainingTargets)
+            {
+                target.SetActive(false);
+            }
+        }
+        Debug.Log("EndGame was Called on from the Leave Button");
+        //Play End Game SFX
     }
 }
