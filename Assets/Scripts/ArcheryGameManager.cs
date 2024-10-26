@@ -48,11 +48,14 @@ public class ArcheryGameManager : MonoBehaviour
     private float _eight = 8f;
     private float _nine = 9f;
     private float _ten = 10f;
-    private float _twelve = 12f;
 
     //CountDown Text
     [SerializeField] private TMP_Text _countdownText;
 
+    private void Start()
+    {
+        _countdownText.text = "";
+    }
 
     private void Update()
     {
@@ -147,7 +150,6 @@ public class ArcheryGameManager : MonoBehaviour
             _targetGroupDownRight01.SetActive(false);
             _targetGroupDownRight03.SetActive(true);
             yield return new WaitForSeconds(_two);
-            //_targetGroupDownLeft02.SetActive(true);
             _targetGroupDownRight02.SetActive(false);
             yield return new WaitForSeconds(_four);
             _targetGroupDownRight03.SetActive(false);
