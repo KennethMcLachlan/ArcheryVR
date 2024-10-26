@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ArcheryGameManager : MonoBehaviour
@@ -49,6 +50,10 @@ public class ArcheryGameManager : MonoBehaviour
     private float _ten = 10f;
     private float _twelve = 12f;
 
+    //CountDown Text
+    [SerializeField] private TMP_Text _countdownText;
+
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
@@ -61,9 +66,21 @@ public class ArcheryGameManager : MonoBehaviour
     {
         //Set Start Timer
 
-        if (_gameIsActive == true)
+        while (_gameIsActive == true)
         {
-            yield return new WaitForSeconds(_three);
+            yield return new WaitForSeconds(_one);
+            _countdownText.text = "Ready?";
+            yield return new WaitForSeconds(_two);
+            _countdownText.text = "3";
+            yield return new WaitForSeconds(_one);
+            _countdownText.text = "2";
+            yield return new WaitForSeconds(_one);
+            _countdownText.text = "1";
+            yield return new WaitForSeconds(_one);
+            _countdownText.text = "Start!";
+            yield return new WaitForSeconds(1.5f);
+            _countdownText.text = "";
+            yield return new WaitForSeconds(0.5f);
 
             ////Starter Set
             _targetGroupScatter.SetActive(true);
@@ -186,8 +203,17 @@ public class ArcheryGameManager : MonoBehaviour
 
             //Game Over
             _gameIsActive = false;
-
-            
         }
+    }
+
+    public void GameStartSignal()
+    {
+        _gameIsActive = true;
+        UIManager.Instance.ResetScore();
+    }
+
+    public void EndGame()
+    {
+        _gameIsActive = false;
     }
 }

@@ -117,4 +117,8 @@ public class UIManager : MonoBehaviour
         _timeRemaining += 15f;
     }
 
+    public void ResetScore()
+    {
+        _scoreValue = 0;
+    }
 }
