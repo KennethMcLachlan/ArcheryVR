@@ -1268,6 +1268,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SprintButton",
+                    "type": "Button",
+                    "id": "a7f50a88-d3dd-4baf-bef0-036776f11009",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1510,6 +1519,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "RayInteractorButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e405505e-506c-430a-92e2-15e3439db67c",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "SprintButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

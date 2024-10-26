@@ -121,6 +121,7 @@ public class MenuController : MonoBehaviour
         _playerMovement.moveSpeed = 5f; //Enables Player Movement
         _rayInteractor.SetActive(false); //Disable Controller Raycast Selector
         StartCoroutine(FadeOut());
+
     }
 
     //Fade in at start of game (Helps ensure the Black Image is not present on start)

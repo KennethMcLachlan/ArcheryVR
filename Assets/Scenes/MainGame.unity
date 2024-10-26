@@ -6269,7 +6269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &115216688
 RectTransform:
   m_ObjectHideFlags: 0
@@ -44251,6 +44251,7 @@ GameObject:
   - component: {fileID: 715288852}
   - component: {fileID: 715288851}
   - component: {fileID: 715288853}
+  - component: {fileID: 715288854}
   m_Layer: 9
   m_Name: XR Origin (XR Rig)
   m_TagString: Player
@@ -44517,6 +44518,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &715288854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715288843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42424f7dfcd9e44e9e6ab754621e15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerMovement: {fileID: 715288850}
+  aButton: {fileID: 3979301473839880124, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &716623570
 GameObject:
   m_ObjectHideFlags: 0
@@ -78661,7 +78676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1325449524
 Transform:
   m_ObjectHideFlags: 0
