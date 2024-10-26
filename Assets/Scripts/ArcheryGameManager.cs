@@ -35,7 +35,6 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _middleOneWayLeft;
     [SerializeField] private GameObject _bottomOneWayLeft;
 
-    private bool _gameIsActive;
 
     //WaitForSecondValues
     private float _one = 1f;
@@ -52,7 +51,9 @@ public class ArcheryGameManager : MonoBehaviour
     //CountDown Text
     [SerializeField] private TMP_Text _countdownText;
 
+    //Game Start and End
     private Coroutine _gameCoroutine;
+    private bool _gameIsActive;
 
     private void Start()
     {
@@ -211,10 +212,18 @@ public class ArcheryGameManager : MonoBehaviour
 
     public void GameStartSignal()
     {
-        _gameIsActive = true;
-        UIManager.Instance.ResetScore();
-        _gameCoroutine = StartCoroutine(GameStartRoutine());
-        Debug.Log("Game Start was called from the Button Push");
+        if (_gameIsActive == false && _gameCoroutine == null)
+        {
+            _gameIsActive = true;
+            UIManager.Instance.ResetScore();
+            _gameCoroutine = StartCoroutine(GameStartRoutine());
+            Debug.Log("Game Start was called from the Button Push");
+        }
+        else
+        {
+            Debug.Log("Game is active and cannot start again");
+
+        }
     }
 
     public void EndGame()
@@ -231,6 +240,7 @@ public class ArcheryGameManager : MonoBehaviour
             {
                 target.SetActive(false);
             }
+
         }
         Debug.Log("EndGame was Called on from the Leave Button");
         //Play End Game SFX
