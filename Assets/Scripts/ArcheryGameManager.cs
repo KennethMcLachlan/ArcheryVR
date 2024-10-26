@@ -55,19 +55,14 @@ public class ArcheryGameManager : MonoBehaviour
     private Coroutine _gameCoroutine;
     private bool _gameIsActive;
 
+    [SerializeField] private GameObject _powerupGroup;
+    private GameObject _activePowerupGroup;
     private void Start()
     {
         _countdownText.text = "";
     }
 
-    private void Update()
-    {
-        //if (Input.GetKeyDown(KeyCode.P))
-        //{
-        //    _gameIsActive = true;
-        //    StartCoroutine(GameStartRoutine());
-        //}
-    }
+    
     private IEnumerator GameStartRoutine()
     {
 
@@ -84,6 +79,7 @@ public class ArcheryGameManager : MonoBehaviour
             yield return new WaitForSeconds(_one);
             _countdownText.text = "Start!";
             yield return new WaitForSeconds(1.5f);
+            _activePowerupGroup = Instantiate(_powerupGroup); // Instantiate Table Top Powerups
             _countdownText.text = "";
             yield return new WaitForSeconds(0.5f);
 
@@ -207,6 +203,9 @@ public class ArcheryGameManager : MonoBehaviour
 
             //Game Over
             _gameIsActive = false;
+
+            
+            _activePowerupGroup.SetActive(false);
         }
     }
 
@@ -231,6 +230,8 @@ public class ArcheryGameManager : MonoBehaviour
         _gameIsActive = false;
         if (_gameCoroutine != null)
         {
+            
+            _activePowerupGroup.SetActive(false);
             StopCoroutine(_gameCoroutine);
             _gameCoroutine = null;
             _countdownText.text = "";
