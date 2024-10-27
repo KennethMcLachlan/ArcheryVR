@@ -55,32 +55,47 @@ public class ArcheryGameManager : MonoBehaviour
     private Coroutine _gameCoroutine;
     private bool _gameIsActive;
 
+    //Spawn/Despawn Powerups
     [SerializeField] private GameObject _powerupGroup;
     private GameObject _activePowerupGroup;
+
+    //SFX
+    [SerializeField] private GameObject _countdownSFX;
+    [SerializeField] private GameObject _preReadySFX;
+    [SerializeField] private GameObject _readyVO;
+    [SerializeField] private GameObject _startVO;
+    [SerializeField] private GameObject _greatJobVO;
     private void Start()
     {
         _countdownText.text = "";
     }
 
-    
     private IEnumerator GameStartRoutine()
     {
 
         while (_gameIsActive == true)
         {
+            _preReadySFX.SetActive(true);
             yield return new WaitForSeconds(_one);
             _countdownText.text = "Ready?";
+            _readyVO.SetActive(true);
             yield return new WaitForSeconds(_two);
             _countdownText.text = "3";
+            _countdownSFX.SetActive(true);
             yield return new WaitForSeconds(_one);
             _countdownText.text = "2";
             yield return new WaitForSeconds(_one);
             _countdownText.text = "1";
             yield return new WaitForSeconds(_one);
             _countdownText.text = "Start!";
+            _startVO.SetActive(true);
             yield return new WaitForSeconds(1.5f);
             _activePowerupGroup = Instantiate(_powerupGroup); // Instantiate Table Top Powerups
             _countdownText.text = "";
+            _countdownSFX.SetActive(false);
+            _preReadySFX.SetActive(false);
+            _readyVO.SetActive(false);
+            _startVO.SetActive(false);
             yield return new WaitForSeconds(0.5f);
 
             ////Starter Set
@@ -201,10 +216,13 @@ public class ArcheryGameManager : MonoBehaviour
             yield return new WaitForSeconds(25f);
             _rainingTargets.SetActive(false);
 
+            //Ending Stats
+            _greatJobVO.SetActive(true);
+            yield return new WaitForSeconds(_three);
+            _greatJobVO.SetActive(false);
+
             //Game Over
             _gameIsActive = false;
-
-            
             _activePowerupGroup.SetActive(false);
         }
     }

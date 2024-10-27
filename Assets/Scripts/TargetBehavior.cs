@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class TargetBehavior : MonoBehaviour
 {
-    [SerializeField] private AudioSource _hitSFX;
-
     private float _forceValue;
     private int _score;
-
-    private void Start()
-    {
-        _hitSFX = GetComponent<AudioSource>();
-    }
 
     private IEnumerator DestroyTargetOverTime()
     {
@@ -25,7 +18,6 @@ public class TargetBehavior : MonoBehaviour
         //Add Score when implemented
         Debug.Log("Target was hit and communicated from Arrow Script");
         UIManager.Instance.UpdateScore();
-        _hitSFX.Play();
         StartCoroutine(DestroyTargetOverTime());
     }
     

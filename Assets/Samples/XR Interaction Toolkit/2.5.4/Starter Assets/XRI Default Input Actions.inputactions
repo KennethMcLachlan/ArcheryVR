@@ -1526,7 +1526,7 @@
                     "name": "",
                     "id": "e405505e-506c-430a-92e2-15e3439db67c",
                     "path": "<XRController>{RightHand}/{PrimaryButton}",
-                    "interactions": "Hold",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "SprintButton",
