@@ -30,6 +30,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text _scoreText;
     [SerializeField] private int _scoreValue;
 
+    //Scoreboard
+    [SerializeField] private TMP_Text _rankText;
+    [SerializeField] private TMP_Text _scoreboardScore;
+
     //ScorePowerup
     private bool _scorePowerupIsActive;
 
@@ -120,5 +124,32 @@ public class UIManager : MonoBehaviour
     public void ResetScore()
     {
         _scoreValue = 0;
+    }
+
+    public void DisplayScore()
+    {
+        if (_scoreValue < 5250)
+        {
+            _rankText.text = "D";
+        }
+        else if (_scoreValue > 5250 && _scoreValue < 6300)
+        {
+            _rankText.text = "C";
+        }
+        else if (_scoreValue > 6300 && _scoreValue < 7350)
+        {
+            _rankText.text = "B";
+        }
+        else if (_scoreValue > 7350 && _scoreValue < 8399)
+        {
+            _rankText.text = "A";
+        }
+        else if (_scoreValue >= 8400)
+        {
+            _rankText.text = "S";
+        }
+
+
+        _scoreboardScore.text = _scoreValue.ToString();
     }
 }

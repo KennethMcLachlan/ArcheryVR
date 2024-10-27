@@ -67,6 +67,8 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _greatJobVO;
 
     [SerializeField] private GameObject _archeryHostessVO;
+
+    [SerializeField] private GameObject _scoreboard;
     private void Start()
     {
         _countdownText.text = "";
@@ -220,12 +222,15 @@ public class ArcheryGameManager : MonoBehaviour
 
             //Ending Stats
             _greatJobVO.SetActive(true);
+            _scoreboard.SetActive(true);
+            UIManager.Instance.DisplayScore();
             yield return new WaitForSeconds(_three);
             _greatJobVO.SetActive(false);
 
             //Game Over
             _gameIsActive = false;
             _activePowerupGroup.SetActive(false);
+            EndGame();
         }
     }
 
@@ -233,6 +238,13 @@ public class ArcheryGameManager : MonoBehaviour
     {
         if (_gameIsActive == false && _gameCoroutine == null)
         {
+            UIManager.Instance.ResetScore();
+
+            if (_scoreboard != null)
+            {
+                _scoreboard.SetActive(false);
+            }
+
             _gameIsActive = true;
             _archeryHostessVO.SetActive(false);
             UIManager.Instance.ResetScore();
@@ -246,8 +258,17 @@ public class ArcheryGameManager : MonoBehaviour
         _gameIsActive = false;
         if (_gameCoroutine != null)
         {
+            if (_activePowerupGroup != null)
+            {
+                _activePowerupGroup.SetActive(false);
+            }
+
+            if (_scoreboard != null)
+            {
+                _scoreboard.SetActive(true);
+            }
+
             _archeryHostessVO.SetActive(true);
-            _activePowerupGroup.SetActive(false);
             StopCoroutine(_gameCoroutine);
             _gameCoroutine = null;
             _countdownText.text = "";
