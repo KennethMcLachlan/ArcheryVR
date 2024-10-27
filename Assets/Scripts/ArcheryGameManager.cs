@@ -65,6 +65,8 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _readyVO;
     [SerializeField] private GameObject _startVO;
     [SerializeField] private GameObject _greatJobVO;
+
+    [SerializeField] private GameObject _archeryHostessVO;
     private void Start()
     {
         _countdownText.text = "";
@@ -232,14 +234,10 @@ public class ArcheryGameManager : MonoBehaviour
         if (_gameIsActive == false && _gameCoroutine == null)
         {
             _gameIsActive = true;
+            _archeryHostessVO.SetActive(false);
             UIManager.Instance.ResetScore();
             _gameCoroutine = StartCoroutine(GameStartRoutine());
             Debug.Log("Game Start was called from the Button Push");
-        }
-        else
-        {
-            Debug.Log("Game is active and cannot start again");
-
         }
     }
 
@@ -248,7 +246,7 @@ public class ArcheryGameManager : MonoBehaviour
         _gameIsActive = false;
         if (_gameCoroutine != null)
         {
-            
+            _archeryHostessVO.SetActive(true);
             _activePowerupGroup.SetActive(false);
             StopCoroutine(_gameCoroutine);
             _gameCoroutine = null;
