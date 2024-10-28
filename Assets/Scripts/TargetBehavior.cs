@@ -7,7 +7,7 @@ public class TargetBehavior : MonoBehaviour
     private float _forceValue;
     private int _score;
 
-    private IEnumerator DestroyTargetOverTime()
+    private IEnumerator DeactivateTargetOverTime()
     {
         yield return new WaitForSeconds(5f);
         Destroy(gameObject);
@@ -18,7 +18,7 @@ public class TargetBehavior : MonoBehaviour
         //Add Score when implemented
         Debug.Log("Target was hit and communicated from Arrow Script");
         UIManager.Instance.UpdateScore();
-        StartCoroutine(DestroyTargetOverTime());
+        StartCoroutine(DeactivateTargetOverTime());
     }
     
     private IEnumerator UpdateScoreRoutine()

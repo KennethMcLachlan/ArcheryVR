@@ -69,6 +69,8 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _archeryHostessVO;
 
     [SerializeField] private GameObject _scoreboard;
+
+    
     private void Start()
     {
         _countdownText.text = "";
@@ -79,6 +81,7 @@ public class ArcheryGameManager : MonoBehaviour
 
         while (_gameIsActive == true)
         {
+            _scoreboard.SetActive(false);
             _preReadySFX.SetActive(true);
             yield return new WaitForSeconds(_one);
             _countdownText.text = "Ready?";
@@ -122,7 +125,6 @@ public class ArcheryGameManager : MonoBehaviour
             _targetGroupStill03.SetActive(false);
             yield return new WaitForSeconds(_five);
             _targetGroupStill04.SetActive(false);
-            yield return new WaitForSeconds(_three);
 
             //W Shape Break
             _targetGroupW.SetActive(true);
@@ -228,7 +230,6 @@ public class ArcheryGameManager : MonoBehaviour
             _greatJobVO.SetActive(false);
 
             //Game Over
-            _gameIsActive = false;
             _activePowerupGroup.SetActive(false);
             EndGame();
         }
@@ -256,31 +257,30 @@ public class ArcheryGameManager : MonoBehaviour
     public void EndGame()
     {
         _gameIsActive = false;
-        if (_gameCoroutine != null)
+
+        if (_activePowerupGroup != null)
         {
-            if (_activePowerupGroup != null)
-            {
-                _activePowerupGroup.SetActive(false);
-            }
-
-            if (_scoreboard != null)
-            {
-                _scoreboard.SetActive(true);
-            }
-
-            _archeryHostessVO.SetActive(true);
-            StopCoroutine(_gameCoroutine);
-            _gameCoroutine = null;
-            _countdownText.text = "";
-
-            GameObject[] remainingTargets = GameObject.FindGameObjectsWithTag("TargetGroup");
-            foreach (GameObject target in remainingTargets)
-            {
-                target.SetActive(false);
-            }
-
+            _activePowerupGroup.SetActive(false);
         }
+
+        if (_scoreboard != null)
+        {
+            _scoreboard.SetActive(true);
+        }
+
+        _archeryHostessVO.SetActive(true);
+        StopCoroutine(_gameCoroutine);
+        _gameCoroutine = null;
+        _countdownText.text = "";
+
+        GameObject[] remainingTargets = GameObject.FindGameObjectsWithTag("TargetGroup");
+        foreach (GameObject target in remainingTargets)
+        {
+            target.SetActive(false);
+        }
+
+
         Debug.Log("EndGame was Called on from the Leave Button");
-        //Play End Game SFX
     }
+
 }

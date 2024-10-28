@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: -2003239332750842248}
   m_Layer: 10
   m_Name: TargetContainer
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -311,7 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba39a23cbc1ddce43a59d469d9b7180f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _hitSFX: {fileID: 5879213591708821276}
 --- !u!95 &-2003239332750842248
 Animator:
   serializedVersion: 5

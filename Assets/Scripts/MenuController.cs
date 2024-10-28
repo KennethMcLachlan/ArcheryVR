@@ -136,6 +136,11 @@ public class MenuController : MonoBehaviour
         StartCoroutine(PauseEndSequenceRoutine());
     }
 
+    public void CloseApplication()
+    {
+        Application.Quit();
+    }
+
     //Used for Switching devices like controllers to and tracking (Error Prevention for this project)
     private void onDeviceChange(InputDevice device, InputDeviceChange change) //May not be neccessary for this project
     {
