@@ -35,6 +35,22 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _middleOneWayLeft;
     [SerializeField] private GameObject _bottomOneWayLeft;
 
+    //Parent Objects to spawn Targets in
+    [SerializeField] private Transform _targetArea;
+    [SerializeField] private Transform _groupScatterSpawn;
+    [SerializeField] private Transform _groupStill01Spawn;
+    [SerializeField] private Transform _groupStill02Spawn;
+    [SerializeField] private Transform _groupStill03Spawn;
+    [SerializeField] private Transform _groupStill04Spawn;
+
+    [SerializeField] private Transform _downLeft01Spawn;
+    [SerializeField] private Transform _downRight01Spawn;
+    [SerializeField] private Transform _downRight02Spawn;
+    [SerializeField] private Transform _downRight03Spawn;
+
+    [SerializeField] private Transform _diamondLeftSpawn;
+    [SerializeField] private Transform _diamondRightSpawn;
+
 
     //WaitForSecondValues
     private float _one = 1f;
@@ -76,6 +92,17 @@ public class ArcheryGameManager : MonoBehaviour
         _countdownText.text = "";
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            _gameIsActive = true;
+            StartCoroutine(GameStartRoutine());
+        }
+            
+
+        
+    }
     private IEnumerator GameStartRoutine()
     {
 
@@ -106,121 +133,141 @@ public class ArcheryGameManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
 
             ////Starter Set
-            _targetGroupScatter.SetActive(true);
+            GameObject targetGroupScatter = Instantiate(_targetGroupScatter, _groupScatterSpawn.position, _groupScatterSpawn.rotation);
             yield return new WaitForSeconds(_nine);
-            _targetGroupScatter.SetActive(false);
+            Destroy(targetGroupScatter);
             yield return new WaitForSeconds(_three);
 
             //Four Corners
-            _targetGroupStill01.SetActive(true);
+            GameObject targetGroupStill01 = Instantiate(_targetGroupStill01,  _groupStill01Spawn.position, _groupStill01Spawn.rotation);
             yield return new WaitForSeconds(_three);
-            _targetGroupStill02.SetActive(true);
+            GameObject targetGroupStill02 = Instantiate(_targetGroupStill02, _groupStill02Spawn.position, _groupStill02Spawn.rotation);
             yield return new WaitForSeconds(_five);
-            _targetGroupStill01.SetActive(false);
-            _targetGroupStill03.SetActive(true);
+            Destroy(targetGroupStill01);
+            GameObject targetGroupStill03 = Instantiate(_targetGroupStill03, _groupStill03Spawn.position, _groupStill03Spawn.rotation);
             yield return new WaitForSeconds(_five);
-            _targetGroupStill02.SetActive(false);
-            _targetGroupStill04.SetActive(true);
+            Destroy(targetGroupStill02);
+            GameObject targetGroupStill04 = Instantiate(_targetGroupStill04, _groupStill04Spawn.position, _groupStill04Spawn.rotation);
             yield return new WaitForSeconds(_five);
-            _targetGroupStill03.SetActive(false);
-            yield return new WaitForSeconds(_five);
-            _targetGroupStill04.SetActive(false);
+            Destroy(targetGroupStill03);
+            yield return new WaitForSeconds(_three);
+            Destroy(targetGroupStill04);
 
             //W Shape Break
-            _targetGroupW.SetActive(true);
+            GameObject targetGroupW = Instantiate(_targetGroupW, _targetArea.position, _targetArea.rotation);
             yield return new WaitForSeconds(_ten);
-            _targetGroupW.SetActive(false);
+            Destroy(targetGroupW);
             yield return new WaitForSeconds(_three);
 
             //Side to Side Movement
-            _middleSideToSide.SetActive(true);
+            GameObject middleSideToSide = Instantiate(_middleSideToSide, _targetArea.position, _targetArea.rotation);
+            middleSideToSide.transform.SetParent(_targetArea);
+            middleSideToSide.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_two);
-            _topSideToSide.SetActive(true);
+            GameObject topSideToSide = Instantiate(_topSideToSide, _targetArea.position, _targetArea.rotation);
+            topSideToSide.transform.SetParent(_targetArea);
+            topSideToSide.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_two);
-            _bottomSideToSide.SetActive(true);
+            GameObject bottomSideToSide = Instantiate(_bottomSideToSide, _targetArea.position, _targetArea.rotation);
+            bottomSideToSide.transform.SetParent(_targetArea);
+            bottomSideToSide.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_five);
-            _middleSideToSide.SetActive(false);
+            Destroy(middleSideToSide);
             yield return new WaitForSeconds(_five);
-            _topSideToSide.SetActive(false);
+            Destroy(topSideToSide);
             yield return new WaitForSeconds(_five);
-            _bottomSideToSide.SetActive(false);
+            Destroy(bottomSideToSide);
             yield return new WaitForSeconds(_three);
 
             //Three Stacks of Three
-            _targetGroup3Stacks.SetActive(true);
+            GameObject targetGroup3Stacks = Instantiate(_targetGroup3Stacks, _targetArea.position, _targetArea.rotation);
             yield return new WaitForSeconds(_eight);
-            _targetGroup3Stacks.SetActive(false);
+            Destroy(targetGroup3Stacks);
             yield return new WaitForSeconds(_three);
 
             //Pyramid Stack Up
-            _targetGroupPyramid.SetActive(true);
+            GameObject targetGroupPyramid = Instantiate(_targetGroupPyramid, _targetArea.position, _targetArea.rotation);
             yield return new WaitForSeconds(_nine);
-            _targetGroupPyramid.SetActive(false);
+            Destroy(targetGroupPyramid);
             yield return new WaitForSeconds(_three);
 
             //Diagonal Target Groups
-            _targetGroupDownLeft01.SetActive(true);
+            GameObject targetGroupDownLeft01 = Instantiate(_targetGroupDownLeft01, _downLeft01Spawn.position, _downLeft01Spawn.rotation);
             yield return new WaitForSeconds(_six);
-            _targetGroupDownRight01.SetActive(true);
+            GameObject targetGroupDownRight01 = Instantiate(_targetGroupDownRight01, _downRight01Spawn.position, _downRight01Spawn.rotation);
             yield return new WaitForSeconds(_two);
-            _targetGroupDownLeft01.SetActive(false);
-            _targetGroupDownRight02.SetActive(true);
+            Destroy(targetGroupDownLeft01);
+            GameObject targetGroupDownRight02 = Instantiate(_targetGroupDownRight02, _downRight02Spawn.position, _downRight02Spawn.rotation);
             yield return new WaitForSeconds(_six);
-            _targetGroupDownRight01.SetActive(false);
-            _targetGroupDownRight03.SetActive(true);
+            Destroy(targetGroupDownRight01);
+            GameObject targetGroupDownRight03 = Instantiate(_targetGroupDownRight03, _downRight03Spawn.position, _downRight03Spawn.rotation);
             yield return new WaitForSeconds(_two);
-            _targetGroupDownRight02.SetActive(false);
+            Destroy(targetGroupDownRight02);
             yield return new WaitForSeconds(_four);
-            _targetGroupDownRight03.SetActive(false);
+            Destroy(targetGroupDownRight03);
             yield return new WaitForSeconds(_three);
 
             //Target Left Movement
-            _bottomOneWayLeft.SetActive(true);
+            GameObject bottomOneWayLeft = Instantiate(_bottomOneWayLeft, _targetArea.position, _targetArea.rotation);
+            bottomOneWayLeft.transform.SetParent(_targetArea);
+            bottomOneWayLeft.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _middleOneWayLeft.SetActive(true);
+            GameObject middleOneWayLeft = Instantiate(_middleOneWayLeft, _targetArea.position, _targetArea.rotation);
+            middleOneWayLeft.transform.SetParent(_targetArea);
+            middleOneWayLeft.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _topOneWayLeft.SetActive(true);
+            GameObject topOneWayLeft = Instantiate(_topOneWayLeft, _targetArea.position, _targetArea.rotation);
+            topOneWayLeft.transform.SetParent(_targetArea);
+            topOneWayLeft.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _bottomOneWayLeft.SetActive(false);
+            Destroy(bottomOneWayLeft);
             yield return new WaitForSeconds(_one);
-            _middleOneWayLeft.SetActive(false);
+            Destroy(middleOneWayLeft);
             yield return new WaitForSeconds(_one);
-            _topOneWayLeft.SetActive(false);
+            Destroy(topOneWayLeft);
             yield return new WaitForSeconds(_three);
 
             //Diamond Shapes
-            _targetGroupDiamondRight.SetActive(true);
+            GameObject targetGroupDiamondRight = Instantiate(_targetGroupDiamondRight, _diamondRightSpawn.position, _diamondRightSpawn.rotation);
             yield return new WaitForSeconds(_four);
-            _targetGroupDiamondLeft.SetActive(true);
+            GameObject targetGroupDiamondLeft = Instantiate(_targetGroupDiamondLeft, _diamondLeftSpawn.position, _diamondLeftSpawn.rotation);
             yield return new WaitForSeconds(_one);
-            _targetGroupDiamondRight.SetActive(false);
+            Destroy(targetGroupDiamondRight);
             yield return new WaitForSeconds(_four);
-            _targetGroupDiamondLeft.SetActive(false);
+            Destroy(targetGroupDiamondLeft);
             yield return new WaitForSeconds(_three);
 
             //Target Right Movement
-            _topOneWayRight.SetActive(true);
+            GameObject topOneWayRight = Instantiate(_topOneWayRight, _targetArea.position, _targetArea.rotation);
+            topOneWayRight.transform.SetParent(_targetArea);
+            topOneWayRight.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _middleOneWayRight.SetActive(true);
+            GameObject middleOneWayRight = Instantiate(_middleOneWayRight, _targetArea.position, _targetArea.rotation);
+            middleOneWayRight.transform.SetParent(_targetArea);
+            middleOneWayRight.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _bottomOneWayRight.SetActive(true);
+            GameObject bottomOneWayRight = Instantiate(_bottomOneWayRight, _targetArea.position, _targetArea.rotation);
+            bottomOneWayRight.transform.SetParent(_targetArea);
+            bottomOneWayRight.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(_one);
-            _topOneWayRight.SetActive(false);
+            Destroy(topOneWayRight);
             yield return new WaitForSeconds(_one);
-            _middleOneWayRight.SetActive(false);
+            Destroy(middleOneWayRight);
             yield return new WaitForSeconds(_one);
-            _bottomOneWayRight.SetActive(false);
+            Destroy(bottomOneWayRight);
             yield return new WaitForSeconds(_three);
 
             //Pyramid Stack Flipped
-            _targetGroupPyramidFlip.SetActive(true);
+            GameObject targetGroupPyramidFlip = Instantiate(_targetGroupPyramidFlip, _targetArea.position, _targetArea.rotation);
             yield return new WaitForSeconds(_eight);
-            _targetGroupPyramidFlip.SetActive(false);
+            Destroy(targetGroupPyramidFlip);
 
             //Raining Targets
-            _rainingTargets.SetActive(true);
+            GameObject rainingTargets = Instantiate(_rainingTargets, _targetArea.position, _targetArea.rotation);
+            rainingTargets.transform.SetParent(_targetArea);
+            rainingTargets.transform.localPosition = Vector3.zero;
             yield return new WaitForSeconds(25f);
-            _rainingTargets.SetActive(false);
+            Destroy(rainingTargets);
 
             //Ending Stats
             _greatJobVO.SetActive(true);
@@ -269,18 +316,181 @@ public class ArcheryGameManager : MonoBehaviour
         }
 
         _archeryHostessVO.SetActive(true);
-        StopCoroutine(_gameCoroutine);
-        _gameCoroutine = null;
+        //StopCoroutine(_gameCoroutine);
+        if (_gameCoroutine != null)
+        {
+            _gameCoroutine = null;
+        }
         _countdownText.text = "";
 
         GameObject[] remainingTargets = GameObject.FindGameObjectsWithTag("TargetGroup");
         foreach (GameObject target in remainingTargets)
         {
-            target.SetActive(false);
+            Destroy(target);
         }
 
 
         Debug.Log("EndGame was Called on from the Leave Button");
     }
+
+
+    //private IEnumerator GameStartRoutine()
+    //{
+
+    //    while (_gameIsActive == true)
+    //    {
+    //        _scoreboard.SetActive(false);
+    //        _preReadySFX.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _countdownText.text = "Ready?";
+    //        _readyVO.SetActive(true);
+    //        yield return new WaitForSeconds(_two);
+    //        _countdownText.text = "3";
+    //        _countdownSFX.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _countdownText.text = "2";
+    //        yield return new WaitForSeconds(_one);
+    //        _countdownText.text = "1";
+    //        yield return new WaitForSeconds(_one);
+    //        _countdownText.text = "Start!";
+    //        _startVO.SetActive(true);
+    //        yield return new WaitForSeconds(1.5f);
+    //        _activePowerupGroup = Instantiate(_powerupGroup); // Instantiate Table Top Powerups
+    //        _countdownText.text = "";
+    //        _countdownSFX.SetActive(false);
+    //        _preReadySFX.SetActive(false);
+    //        _readyVO.SetActive(false);
+    //        _startVO.SetActive(false);
+    //        yield return new WaitForSeconds(0.5f);
+
+    //        ////Starter Set
+    //        _targetGroupScatter.SetActive(true);
+    //        yield return new WaitForSeconds(_nine);
+    //        _targetGroupScatter.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Four Corners
+    //        _targetGroupStill01.SetActive(true);
+    //        yield return new WaitForSeconds(_three);
+    //        _targetGroupStill02.SetActive(true);
+    //        yield return new WaitForSeconds(_five);
+    //        _targetGroupStill01.SetActive(false);
+    //        _targetGroupStill03.SetActive(true);
+    //        yield return new WaitForSeconds(_five);
+    //        _targetGroupStill02.SetActive(false);
+    //        _targetGroupStill04.SetActive(true);
+    //        yield return new WaitForSeconds(_five);
+    //        _targetGroupStill03.SetActive(false);
+    //        yield return new WaitForSeconds(_five);
+    //        _targetGroupStill04.SetActive(false);
+
+    //        //W Shape Break
+    //        _targetGroupW.SetActive(true);
+    //        yield return new WaitForSeconds(_ten);
+    //        _targetGroupW.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Side to Side Movement
+    //        _middleSideToSide.SetActive(true);
+    //        yield return new WaitForSeconds(_two);
+    //        _topSideToSide.SetActive(true);
+    //        yield return new WaitForSeconds(_two);
+    //        _bottomSideToSide.SetActive(true);
+    //        yield return new WaitForSeconds(_five);
+    //        _middleSideToSide.SetActive(false);
+    //        yield return new WaitForSeconds(_five);
+    //        _topSideToSide.SetActive(false);
+    //        yield return new WaitForSeconds(_five);
+    //        _bottomSideToSide.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Three Stacks of Three
+    //        _targetGroup3Stacks.SetActive(true);
+    //        yield return new WaitForSeconds(_eight);
+    //        _targetGroup3Stacks.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Pyramid Stack Up
+    //        _targetGroupPyramid.SetActive(true);
+    //        yield return new WaitForSeconds(_nine);
+    //        _targetGroupPyramid.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Diagonal Target Groups
+    //        _targetGroupDownLeft01.SetActive(true);
+    //        yield return new WaitForSeconds(_six);
+    //        _targetGroupDownRight01.SetActive(true);
+    //        yield return new WaitForSeconds(_two);
+    //        _targetGroupDownLeft01.SetActive(false);
+    //        _targetGroupDownRight02.SetActive(true);
+    //        yield return new WaitForSeconds(_six);
+    //        _targetGroupDownRight01.SetActive(false);
+    //        _targetGroupDownRight03.SetActive(true);
+    //        yield return new WaitForSeconds(_two);
+    //        _targetGroupDownRight02.SetActive(false);
+    //        yield return new WaitForSeconds(_four);
+    //        _targetGroupDownRight03.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Target Left Movement
+    //        _bottomOneWayLeft.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _middleOneWayLeft.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _topOneWayLeft.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _bottomOneWayLeft.SetActive(false);
+    //        yield return new WaitForSeconds(_one);
+    //        _middleOneWayLeft.SetActive(false);
+    //        yield return new WaitForSeconds(_one);
+    //        _topOneWayLeft.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Diamond Shapes
+    //        _targetGroupDiamondRight.SetActive(true);
+    //        yield return new WaitForSeconds(_four);
+    //        _targetGroupDiamondLeft.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _targetGroupDiamondRight.SetActive(false);
+    //        yield return new WaitForSeconds(_four);
+    //        _targetGroupDiamondLeft.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Target Right Movement
+    //        _topOneWayRight.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _middleOneWayRight.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _bottomOneWayRight.SetActive(true);
+    //        yield return new WaitForSeconds(_one);
+    //        _topOneWayRight.SetActive(false);
+    //        yield return new WaitForSeconds(_one);
+    //        _middleOneWayRight.SetActive(false);
+    //        yield return new WaitForSeconds(_one);
+    //        _bottomOneWayRight.SetActive(false);
+    //        yield return new WaitForSeconds(_three);
+
+    //        //Pyramid Stack Flipped
+    //        _targetGroupPyramidFlip.SetActive(true);
+    //        yield return new WaitForSeconds(_eight);
+    //        _targetGroupPyramidFlip.SetActive(false);
+
+    //        //Raining Targets
+    //        _rainingTargets.SetActive(true);
+    //        yield return new WaitForSeconds(25f);
+    //        _rainingTargets.SetActive(false);
+
+    //        //Ending Stats
+    //        _greatJobVO.SetActive(true);
+    //        _scoreboard.SetActive(true);
+    //        UIManager.Instance.DisplayScore();
+    //        yield return new WaitForSeconds(_three);
+    //        _greatJobVO.SetActive(false);
+
+    //        //Game Over
+    //        _activePowerupGroup.SetActive(false);
+    //        EndGame();
+    //    }
+    //}
 
 }
