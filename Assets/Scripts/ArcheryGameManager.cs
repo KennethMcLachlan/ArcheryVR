@@ -92,17 +92,6 @@ public class ArcheryGameManager : MonoBehaviour
         _countdownText.text = "";
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            _gameIsActive = true;
-            StartCoroutine(GameStartRoutine());
-        }
-            
-
-        
-    }
     private IEnumerator GameStartRoutine()
     {
 
@@ -284,7 +273,7 @@ public class ArcheryGameManager : MonoBehaviour
 
     public void GameStartSignal()
     {
-        if (_gameIsActive == false && _gameCoroutine == null)
+        if (_gameIsActive == false)
         {
             UIManager.Instance.ResetScore();
 
@@ -295,8 +284,11 @@ public class ArcheryGameManager : MonoBehaviour
 
             _gameIsActive = true;
             _archeryHostessVO.SetActive(false);
-            UIManager.Instance.ResetScore();
-            _gameCoroutine = StartCoroutine(GameStartRoutine());
+
+            if (_gameCoroutine == null)
+            {
+                _gameCoroutine = StartCoroutine(GameStartRoutine());
+            }
             Debug.Log("Game Start was called from the Button Push");
         }
     }
@@ -316,9 +308,10 @@ public class ArcheryGameManager : MonoBehaviour
         }
 
         _archeryHostessVO.SetActive(true);
-        //StopCoroutine(_gameCoroutine);
+
         if (_gameCoroutine != null)
         {
+            StopCoroutine(_gameCoroutine);
             _gameCoroutine = null;
         }
         _countdownText.text = "";
@@ -334,163 +327,6 @@ public class ArcheryGameManager : MonoBehaviour
     }
 
 
-    //private IEnumerator GameStartRoutine()
-    //{
-
-    //    while (_gameIsActive == true)
-    //    {
-    //        _scoreboard.SetActive(false);
-    //        _preReadySFX.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _countdownText.text = "Ready?";
-    //        _readyVO.SetActive(true);
-    //        yield return new WaitForSeconds(_two);
-    //        _countdownText.text = "3";
-    //        _countdownSFX.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _countdownText.text = "2";
-    //        yield return new WaitForSeconds(_one);
-    //        _countdownText.text = "1";
-    //        yield return new WaitForSeconds(_one);
-    //        _countdownText.text = "Start!";
-    //        _startVO.SetActive(true);
-    //        yield return new WaitForSeconds(1.5f);
-    //        _activePowerupGroup = Instantiate(_powerupGroup); // Instantiate Table Top Powerups
-    //        _countdownText.text = "";
-    //        _countdownSFX.SetActive(false);
-    //        _preReadySFX.SetActive(false);
-    //        _readyVO.SetActive(false);
-    //        _startVO.SetActive(false);
-    //        yield return new WaitForSeconds(0.5f);
-
-    //        ////Starter Set
-    //        _targetGroupScatter.SetActive(true);
-    //        yield return new WaitForSeconds(_nine);
-    //        _targetGroupScatter.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Four Corners
-    //        _targetGroupStill01.SetActive(true);
-    //        yield return new WaitForSeconds(_three);
-    //        _targetGroupStill02.SetActive(true);
-    //        yield return new WaitForSeconds(_five);
-    //        _targetGroupStill01.SetActive(false);
-    //        _targetGroupStill03.SetActive(true);
-    //        yield return new WaitForSeconds(_five);
-    //        _targetGroupStill02.SetActive(false);
-    //        _targetGroupStill04.SetActive(true);
-    //        yield return new WaitForSeconds(_five);
-    //        _targetGroupStill03.SetActive(false);
-    //        yield return new WaitForSeconds(_five);
-    //        _targetGroupStill04.SetActive(false);
-
-    //        //W Shape Break
-    //        _targetGroupW.SetActive(true);
-    //        yield return new WaitForSeconds(_ten);
-    //        _targetGroupW.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Side to Side Movement
-    //        _middleSideToSide.SetActive(true);
-    //        yield return new WaitForSeconds(_two);
-    //        _topSideToSide.SetActive(true);
-    //        yield return new WaitForSeconds(_two);
-    //        _bottomSideToSide.SetActive(true);
-    //        yield return new WaitForSeconds(_five);
-    //        _middleSideToSide.SetActive(false);
-    //        yield return new WaitForSeconds(_five);
-    //        _topSideToSide.SetActive(false);
-    //        yield return new WaitForSeconds(_five);
-    //        _bottomSideToSide.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Three Stacks of Three
-    //        _targetGroup3Stacks.SetActive(true);
-    //        yield return new WaitForSeconds(_eight);
-    //        _targetGroup3Stacks.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Pyramid Stack Up
-    //        _targetGroupPyramid.SetActive(true);
-    //        yield return new WaitForSeconds(_nine);
-    //        _targetGroupPyramid.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Diagonal Target Groups
-    //        _targetGroupDownLeft01.SetActive(true);
-    //        yield return new WaitForSeconds(_six);
-    //        _targetGroupDownRight01.SetActive(true);
-    //        yield return new WaitForSeconds(_two);
-    //        _targetGroupDownLeft01.SetActive(false);
-    //        _targetGroupDownRight02.SetActive(true);
-    //        yield return new WaitForSeconds(_six);
-    //        _targetGroupDownRight01.SetActive(false);
-    //        _targetGroupDownRight03.SetActive(true);
-    //        yield return new WaitForSeconds(_two);
-    //        _targetGroupDownRight02.SetActive(false);
-    //        yield return new WaitForSeconds(_four);
-    //        _targetGroupDownRight03.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Target Left Movement
-    //        _bottomOneWayLeft.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _middleOneWayLeft.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _topOneWayLeft.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _bottomOneWayLeft.SetActive(false);
-    //        yield return new WaitForSeconds(_one);
-    //        _middleOneWayLeft.SetActive(false);
-    //        yield return new WaitForSeconds(_one);
-    //        _topOneWayLeft.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Diamond Shapes
-    //        _targetGroupDiamondRight.SetActive(true);
-    //        yield return new WaitForSeconds(_four);
-    //        _targetGroupDiamondLeft.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _targetGroupDiamondRight.SetActive(false);
-    //        yield return new WaitForSeconds(_four);
-    //        _targetGroupDiamondLeft.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Target Right Movement
-    //        _topOneWayRight.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _middleOneWayRight.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _bottomOneWayRight.SetActive(true);
-    //        yield return new WaitForSeconds(_one);
-    //        _topOneWayRight.SetActive(false);
-    //        yield return new WaitForSeconds(_one);
-    //        _middleOneWayRight.SetActive(false);
-    //        yield return new WaitForSeconds(_one);
-    //        _bottomOneWayRight.SetActive(false);
-    //        yield return new WaitForSeconds(_three);
-
-    //        //Pyramid Stack Flipped
-    //        _targetGroupPyramidFlip.SetActive(true);
-    //        yield return new WaitForSeconds(_eight);
-    //        _targetGroupPyramidFlip.SetActive(false);
-
-    //        //Raining Targets
-    //        _rainingTargets.SetActive(true);
-    //        yield return new WaitForSeconds(25f);
-    //        _rainingTargets.SetActive(false);
-
-    //        //Ending Stats
-    //        _greatJobVO.SetActive(true);
-    //        _scoreboard.SetActive(true);
-    //        UIManager.Instance.DisplayScore();
-    //        yield return new WaitForSeconds(_three);
-    //        _greatJobVO.SetActive(false);
-
-    //        //Game Over
-    //        _activePowerupGroup.SetActive(false);
-    //        EndGame();
-    //    }
-    //}
+    
 
 }
