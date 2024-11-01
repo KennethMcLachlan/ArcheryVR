@@ -10,11 +10,6 @@ public class ScorePowerup : MonoBehaviour
         _pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
     }
 
-    void Update()
-    {
-
-    }
-
     public void ScorePowerupHit()
     {
         Debug.Log("Score Powerup was hit");

@@ -7,7 +7,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PlayerSprint : MonoBehaviour
 {
     [SerializeField] private ActionBasedContinuousMoveProvider _playerMovement;
-
     public InputActionReference aButton;
 
     private void Awake()
@@ -28,7 +27,6 @@ public class PlayerSprint : MonoBehaviour
     {
         _playerMovement.moveSpeed = 9;
     }
-
 
     private void OnDestroy()
     {

@@ -75,7 +75,6 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    //Update the timer text
     public void UpdateTimer(float currentTime)
     {
         currentTime += 1;
@@ -98,6 +97,7 @@ public class UIManager : MonoBehaviour
         {
             _scoreValue += 100;
         }
+
         _scoreText.text = "Score: " + _scoreValue.ToString();
         Debug.Log("Current Score is" +  _scoreValue);
     }
@@ -115,7 +115,6 @@ public class UIManager : MonoBehaviour
     }
 
     //Timer Powerup
-
     public void ReceiveExtraTime()
     {
         _timeRemaining += 15f;
@@ -148,7 +147,6 @@ public class UIManager : MonoBehaviour
         {
             _rankText.text = "S";
         }
-
 
         _scoreboardScore.text = _scoreValue.ToString();
     }

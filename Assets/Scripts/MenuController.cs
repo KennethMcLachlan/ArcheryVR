@@ -34,6 +34,7 @@ public class MenuController : MonoBehaviour
         InputSystem.onDeviceChange += onDeviceChange;
 
         StartCoroutine(GameStartFadeIn());
+
         _player = GameObject.Find("XR Origin (XR Rig)").GetComponent<Transform>();
         _playerMovement = GameObject.Find("XR Origin (XR Rig)").GetComponent<ActionBasedContinuousMoveProvider>();
         if (_playerMovement == null)
@@ -52,7 +53,7 @@ public class MenuController : MonoBehaviour
     //Turns the menu on/off
     private void ToggleMenu(InputAction.CallbackContext context)
     {
-        _pauseMenuIsActive = !_pauseMenuIsActive; //Toggles Bool on Menu Button Press
+        _pauseMenuIsActive = !_pauseMenuIsActive;
 
         if (_pauseMenuIsActive == true)
         {
@@ -106,7 +107,7 @@ public class MenuController : MonoBehaviour
         _player.position = _pauseSpawnLocation.position;
         _player.rotation = _pauseSpawnLocation.rotation;
         _playerMovement.moveSpeed = 0f; //Prevents player movement when in menu
-        _rayInteractor.SetActive(true); //Enable Controller Raycast Selector
+        _rayInteractor.SetActive(true);
         StartCoroutine(FadeOut());
     }
 
@@ -119,16 +120,16 @@ public class MenuController : MonoBehaviour
         _player.position = _activePlayPosition;
         _player.rotation = _activePlayRotation;
         _playerMovement.moveSpeed = 5f; //Enables Player Movement
-        _rayInteractor.SetActive(false); //Disable Controller Raycast Selector
+        _rayInteractor.SetActive(false);
         StartCoroutine(FadeOut());
 
     }
 
-    //Fade in at start of game (Helps ensure the Black Image is not present on start)
+    //Fade in at start of game
     private IEnumerator GameStartFadeIn()
     {
-        fadeImage.color = new Color(0, 0, 0, 1); // Start with black
-        yield return FadeOut(); // Fade out from black
+        fadeImage.color = new Color(0, 0, 0, 1);
+        yield return FadeOut();
     }
 
     public void ResumeGameFromButton()
@@ -141,8 +142,7 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
-    //Used for Switching devices like controllers to and tracking (Error Prevention for this project)
-    private void onDeviceChange(InputDevice device, InputDeviceChange change) //May not be neccessary for this project
+    private void onDeviceChange(InputDevice device, InputDeviceChange change)
     {
         switch (change)
         {

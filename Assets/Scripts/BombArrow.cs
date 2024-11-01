@@ -6,17 +6,14 @@ public class BombArrow : MonoBehaviour
 {
     public float speed = 10f;
     public Transform tip;
-
     private Rigidbody _rigidbody;
     private bool _inAir = false;
     private Vector3 _lastPosition = Vector3.zero;
+    private float _forceValue;
 
     //VFX
     private ParticleSystem _particleSystem;
     private TrailRenderer _trailRenderer;
-
-    private float _forceValue;
-    public TargetBehavior _targetBehavior;
 
     //Bomb Powerup
     public float explosiveForce = 10.0f;
@@ -29,6 +26,7 @@ public class BombArrow : MonoBehaviour
     private Transform _player;
     [SerializeField] private AudioSource _explosionSFX;
 
+    public TargetBehavior _targetBehavior;
     public PullInteraction pullInteraction;
     private void Awake()
     {
@@ -51,42 +49,36 @@ public class BombArrow : MonoBehaviour
         }
 
         _rigidbody = GetComponent<Rigidbody>();
-        PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
+        PullInteraction.PullActionReleased += Release;
 
-        //VFX
         _particleSystem = GetComponentInChildren<ParticleSystem>();
         _trailRenderer = GetComponentInChildren<TrailRenderer>();
 
-        PullInteraction.PullActionReleased += Release;
         StopFunctions();
     }
 
     private void OnDestroy()
     {
-        PullInteraction.PullActionReleased -= Release; // Unsubscribes when the object is destroyed
+        PullInteraction.PullActionReleased -= Release;
     }
 
     private void Release(float value)
     {
-        PullInteraction.PullActionReleased -= Release; // Unsubscribe to prevent the arrow from unintended movement
+        PullInteraction.PullActionReleased -= Release;
+
         if (gameObject != null)
         {
             gameObject.transform.parent = null;
         }
+
         _inAir = true;
         SetPhysics(true);
 
-        //May be a spot to determine the Force applied to targets *****
-        Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
-
-        Debug.Log("Arrow Release Force Value: " + force + value);
+        Vector3 force = transform.forward * value * speed;
         _forceValue = value;
-
-        _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody (Projects the arrow)
-
+        _rigidbody.AddForce(force, ForceMode.Impulse);
 
         StartCoroutine(RotateWithVelocity());
-
         _lastPosition = tip.position;
 
         //VFX
@@ -94,12 +86,12 @@ public class BombArrow : MonoBehaviour
         _trailRenderer.emitting = true;
     }
 
-    private IEnumerator RotateWithVelocity() // Allows the arrow to rotate in unison with projection
+    private IEnumerator RotateWithVelocity()
     {
         yield return new WaitForFixedUpdate();
         while (_inAir)
         {
-            Quaternion newRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up); // Allows the arrow to rotate with the transform.up
+            Quaternion newRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up);
             transform.rotation = newRotation;
             yield return null;
         }
@@ -111,13 +103,13 @@ public class BombArrow : MonoBehaviour
         if (_inAir == true)
         {
             CheckCollision();
-            _lastPosition = tip.position; // Update the last position to egaul the current tip position
+            _lastPosition = tip.position;
         }
     }
 
-    private void CheckCollision() //Linecast seems to work better than a Box Trigger
+    private void CheckCollision()
     {
-        if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo)) //Creates a linecast from the last position to the current tip position
+        if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo))
         {
             if (hitInfo.transform.gameObject.layer != 9) //Ensures the arrow ignores the Player's body (Layer 9)
             {
@@ -130,10 +122,10 @@ public class BombArrow : MonoBehaviour
                 _explosionSFX.Play();
 
                 //Arrows can be applied to anything with a Rigidbody except for the player
-                if (hitInfo.transform.TryGetComponent(out Rigidbody body)) // if there's a Rigidbody
+                if (hitInfo.transform.TryGetComponent(out Rigidbody body))
                 {
-                    _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation. No Jitter is noticeable and reduces memory usage
-                    transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
+                    _rigidbody.interpolation = RigidbodyInterpolation.None;
+                    transform.parent = hitInfo.transform;
                 }
 
                 //Regular Arrow hit
@@ -149,13 +141,13 @@ public class BombArrow : MonoBehaviour
 
                             hitInfo.rigidbody.useGravity = true;
                             hitInfo.rigidbody.isKinematic = false;
-                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse);
                         }
                     }
                 }
 
                 //Bomb Arrow Powerup hit
-                if (hitInfo.transform.gameObject.layer == 11) // Initiates the Bomb Powerup when hit
+                if (hitInfo.transform.gameObject.layer == 11)
                 {
                     BombPowerup bombPowerup = hitInfo.transform.GetComponent<BombPowerup>();
                     if (bombPowerup != null)
@@ -165,7 +157,7 @@ public class BombArrow : MonoBehaviour
 
                         if (pullInteraction != null)
                         {
-                            pullInteraction.ReceiveBombInfoTrue(); //Communicates with Pull Interaction Script
+                            pullInteraction.ReceiveBombInfoTrue();
 
                             Debug.Log("Called ReceiveBombInfoTrue() from Arrow script");
                         }
@@ -173,8 +165,8 @@ public class BombArrow : MonoBehaviour
                         {
                             Debug.LogError("PullInteraction is null in Arrow Script");
                         }
-                        StartCoroutine(BombDurationRoutine());
 
+                        StartCoroutine(BombDurationRoutine());
                     }
                 }
 
@@ -234,7 +226,7 @@ public class BombArrow : MonoBehaviour
     {
         yield return new WaitForSeconds(5f);
         _bombIsActive = false;
-        pullInteraction.ReceiveBombInfoFalse(); //Tells Pull Interaction Script to change arrow Instantiation types
+        pullInteraction.ReceiveBombInfoFalse();
     }
     private void StopFunctions()
     {

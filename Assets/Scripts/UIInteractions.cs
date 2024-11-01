@@ -22,5 +22,4 @@ public class UIInteractions : MonoBehaviour
         Application.Quit();
     }
 
-
 }

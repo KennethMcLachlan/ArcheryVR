@@ -15,7 +15,6 @@ public class TargetBehavior : MonoBehaviour
 
     public void TargetHit()
     {
-        //Add Score when implemented
         Debug.Log("Target was hit and communicated from Arrow Script");
         UIManager.Instance.UpdateScore();
         StartCoroutine(DeactivateTargetOverTime());

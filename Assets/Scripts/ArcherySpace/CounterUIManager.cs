@@ -19,12 +19,9 @@ public class CounterUIManager : MonoBehaviour
     }
 
     [SerializeField] private ArcheryGameManager _gameManager;
-
-    //Buttons
     [SerializeField] private TMP_Text _aText;
 
     private float _one = 1f;
-
     private bool _isFading;
     private void Awake()
     {
@@ -33,18 +30,10 @@ public class CounterUIManager : MonoBehaviour
     void Start()
     {
         _isFading = true;
-
-        //_gameManager = GetComponent<ArcheryGameManager>(); // May take out
-        //if (_gameManager == null)
-        //{
-        //    Debug.LogError("Archery GameManager is NULL");
-        //}
     }
 
-    // Update is called once per frame
     void Update()
     {
-        //Fades "A" Button Icon In/Out
         if (_isFading == true)
         {
             _aText.CrossFadeAlpha(0f, 0.05f, false);

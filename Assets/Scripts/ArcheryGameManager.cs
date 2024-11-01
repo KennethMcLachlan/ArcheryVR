@@ -24,7 +24,7 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _targetGroupW;
 
     //Animated Target Groups
-    [SerializeField] private GameObject _rainingTargets; //Finisher
+    [SerializeField] private GameObject _rainingTargets;
     [SerializeField] private GameObject _topSideToSide;
     [SerializeField] private GameObject _middleSideToSide;
     [SerializeField] private GameObject _bottomSideToSide;
@@ -70,6 +70,7 @@ public class ArcheryGameManager : MonoBehaviour
     //Game Start and End
     private Coroutine _gameCoroutine;
     private bool _gameIsActive;
+    private bool _gameIsFinished;
 
     //Spawn/Despawn Powerups
     [SerializeField] private GameObject _powerupGroup;
@@ -83,20 +84,25 @@ public class ArcheryGameManager : MonoBehaviour
     [SerializeField] private GameObject _greatJobVO;
 
     [SerializeField] private GameObject _archeryHostessVO;
-
     [SerializeField] private GameObject _scoreboard;
 
-    
+    [SerializeField] private GameObject _playButton;
+
     private void Start()
     {
         _countdownText.text = "";
+        _gameIsActive = false;
     }
 
     private IEnumerator GameStartRoutine()
     {
+        _gameIsActive = true;
 
         while (_gameIsActive == true)
         {
+            _archeryHostessVO.SetActive(false);
+            UIManager.Instance.ResetScore();
+
             _scoreboard.SetActive(false);
             _preReadySFX.SetActive(true);
             yield return new WaitForSeconds(_one);
@@ -113,7 +119,7 @@ public class ArcheryGameManager : MonoBehaviour
             _countdownText.text = "Start!";
             _startVO.SetActive(true);
             yield return new WaitForSeconds(1.5f);
-            _activePowerupGroup = Instantiate(_powerupGroup); // Instantiate Table Top Powerups
+            _activePowerupGroup = Instantiate(_powerupGroup);
             _countdownText.text = "";
             _countdownSFX.SetActive(false);
             _preReadySFX.SetActive(false);
@@ -267,66 +273,18 @@ public class ArcheryGameManager : MonoBehaviour
 
             //Game Over
             _activePowerupGroup.SetActive(false);
-            EndGame();
+            _archeryHostessVO.SetActive(true);
+            _playButton.SetActive(true);
+            _gameIsActive = false;
         }
     }
 
     public void GameStartSignal()
     {
-        if (_gameIsActive == false)
-        {
-            UIManager.Instance.ResetScore();
+        _playButton.SetActive(false);
+        _gameCoroutine = StartCoroutine(GameStartRoutine());
+        Debug.Log("Game Start was called from the Button Push");
 
-            if (_scoreboard != null)
-            {
-                _scoreboard.SetActive(false);
-            }
-
-            _gameIsActive = true;
-            _archeryHostessVO.SetActive(false);
-
-            if (_gameCoroutine == null)
-            {
-                _gameCoroutine = StartCoroutine(GameStartRoutine());
-            }
-            Debug.Log("Game Start was called from the Button Push");
-        }
     }
-
-    public void EndGame()
-    {
-        _gameIsActive = false;
-
-        if (_activePowerupGroup != null)
-        {
-            _activePowerupGroup.SetActive(false);
-        }
-
-        if (_scoreboard != null)
-        {
-            _scoreboard.SetActive(true);
-        }
-
-        _archeryHostessVO.SetActive(true);
-
-        if (_gameCoroutine != null)
-        {
-            StopCoroutine(_gameCoroutine);
-            _gameCoroutine = null;
-        }
-        _countdownText.text = "";
-
-        GameObject[] remainingTargets = GameObject.FindGameObjectsWithTag("TargetGroup");
-        foreach (GameObject target in remainingTargets)
-        {
-            Destroy(target);
-        }
-
-
-        Debug.Log("EndGame was Called on from the Leave Button");
-    }
-
-
-    
 
 }

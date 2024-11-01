@@ -12,9 +12,9 @@ public class ArrowSpawner : MonoBehaviour
     public GameObject notch;
 
     private XRGrabInteractable _bow;
-    private bool _arrowNotched;
     private GameObject _currentArrow = null;
 
+    private bool _arrowNotched;
     void Start()
     {
         _bow = GetComponent<XRGrabInteractable>();
@@ -26,7 +26,6 @@ public class ArrowSpawner : MonoBehaviour
         PullInteraction.PullActionReleased -= NotchEmpty;
     }
     
-
     void Update()
     {
         if (_bow.isSelected && _arrowNotched == false)
@@ -35,12 +34,11 @@ public class ArrowSpawner : MonoBehaviour
         }
         if (!_bow.isSelected && _currentArrow != null)
         {
-            //Destroy(_currentArrow);
             NotchEmpty(1f);
         }
     }
 
-    private void NotchEmpty(float value) // Needs a float value to match the Action Event
+    private void NotchEmpty(float value)
     {
         _arrowNotched = false;
         _currentArrow = null;

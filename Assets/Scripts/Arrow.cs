@@ -6,47 +6,35 @@ using UnityEngine.SceneManagement;
 public class Arrow : MonoBehaviour
 {
     public float speed = 10f;
-    public Transform tip;
+    private float _forceValue;
 
-    private Rigidbody _rigidbody;
-    private bool _inAir = false;
     private Vector3 _lastPosition = Vector3.zero;
 
-    //VFX
-    //private ParticleSystem _particleSystem;
+    public Transform tip;
+    private Rigidbody _rigidbody;
     private TrailRenderer _trailRenderer;
-
-    private float _forceValue;
-    public TargetBehavior _targetBehavior;
-
     public PullInteraction pullInteraction;
 
-    //[SerializeField] private float _trajectoryAlignment = 2;
-
-    
+    private bool _inAir = false;
     private void Awake()
     {
         pullInteraction = GameObject.Find("BowString").GetComponent<PullInteraction>();
+        PullInteraction.PullActionReleased += Release;
 
         _rigidbody = GetComponent<Rigidbody>();
-        PullInteraction.PullActionReleased += Release; // Subscribes to the Release Pull Interaction
-
-        //VFX
-        //_particleSystem = GetComponentInChildren<ParticleSystem>();
         _trailRenderer = GetComponentInChildren<TrailRenderer>();
 
-        PullInteraction.PullActionReleased += Release;
         StopFunctions();
     }
 
     private void OnDestroy()
     {
-        PullInteraction.PullActionReleased -= Release; // Unsubscribes when the object is destroyed
+        PullInteraction.PullActionReleased -= Release;
     }
 
     public void Release(float value)
     {
-        PullInteraction.PullActionReleased -= Release; // Unsubscribe to prevent the arrow from unintended movement
+        PullInteraction.PullActionReleased -= Release;
 
         if (gameObject != null)
         {
@@ -56,32 +44,22 @@ public class Arrow : MonoBehaviour
         _inAir = true;
         SetPhysics(true);
 
-        Vector3 force = transform.forward * value * speed; // Determines arrow force based on the value from PullActionReleased
+        Vector3 force = transform.forward * value * speed;
         _forceValue = value;
+        _rigidbody.AddForce(force, ForceMode.Impulse);
 
-        _rigidbody.AddForce(force, ForceMode.Impulse); // Adds force to the rigidbody (Projects the arrow)
         StartCoroutine(RotateWithVelocity());
+
         _lastPosition = tip.position;
-
-        //TrajectoryLine trajectoryLine = FindObjectOfType<TrajectoryLine>();
-        //trajectoryLine.SimulateTrajectory(transform.position, force);
-
-        //VFX
-        //_particleSystem.Play();
         _trailRenderer.emitting = true;
     }
 
-    //public Vector3 GetProjectedForce(float pullValue) // *****Recent Addition****
-    //{
-    //    return transform.forward * pullValue * speed /* * _trajectoryAlignment;*/;
-    //}
-
-    private IEnumerator RotateWithVelocity() // Allows the arrow to rotate in unison with projection
+    private IEnumerator RotateWithVelocity()
     {
         yield return new WaitForFixedUpdate();
         while (_inAir) 
         {
-            Quaternion newRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up); // Allows the arrow to rotate with the transform.up
+            Quaternion newRotation = Quaternion.LookRotation(_rigidbody.velocity, transform.up);
             transform.rotation = newRotation;
             yield return null;
         }
@@ -89,25 +67,24 @@ public class Arrow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //If the arrow is in the air then check for collision
         if (_inAir == true)
         {
             CheckCollision();
-            _lastPosition = tip.position; // Update the last position to egaul the current tip position
+            _lastPosition = tip.position;
         }
     }
 
-    private void CheckCollision() //Linecast seems to work better than a Box Trigger
+    private void CheckCollision()
     {
-        if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo)) //Creates a linecast from the last position to the current tip position
+        if (Physics.Linecast(_lastPosition, tip.position, out RaycastHit hitInfo))
         {
             if (hitInfo.transform.gameObject.layer != 9) //Ensures the arrow ignores the Player's body (Layer 9)
             {
                 //Arrows can be applied to anything with a Rigidbody except for the player
                 if (hitInfo.transform.TryGetComponent(out Rigidbody body))
                 {
-                    _rigidbody.interpolation = RigidbodyInterpolation.None; // Turn off interpolation. No Jitter is noticeable and reduces memory usage
-                    transform.parent = hitInfo.transform; //Set new parent of the arrow to what is hit so the arrow sticks to it
+                    _rigidbody.interpolation = RigidbodyInterpolation.None;
+                    transform.parent = hitInfo.transform;
                 }
 
                 //Arrows can hit Targets
@@ -121,13 +98,13 @@ public class Arrow : MonoBehaviour
                             targetBehavior.TargetHit();
                             hitInfo.rigidbody.useGravity = true;
                             hitInfo.rigidbody.isKinematic = false;
-                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse); //Add Force to the Rigidbody to what was hit
+                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse);
                         }
                     }
                 }
 
                 //Arrows can hit the Bomb Powerup
-                if (hitInfo.transform.gameObject.layer == 11) // Initiates the Bomb Powerup when hit
+                if (hitInfo.transform.gameObject.layer == 11)
                 {
                     BombPowerup bombPowerup = hitInfo.transform.GetComponent<BombPowerup>();
                     if (bombPowerup != null)
@@ -166,9 +143,6 @@ public class Arrow : MonoBehaviour
     {
         _inAir = false;
         SetPhysics(false);
-
-        //VFX
-        //_particleSystem.Stop();
         _trailRenderer.emitting = false;
     }
 

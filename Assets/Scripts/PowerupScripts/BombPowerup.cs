@@ -12,9 +12,7 @@ public class BombPowerup : MonoBehaviour
 
     public void BombPowerupHit()
     {
-        Debug.Log("BombPowerup was hit");
         pullInteraction.ReceiveBombInfoTrue();
-        //Play SFX here
         Destroy(gameObject);
     }
 }
