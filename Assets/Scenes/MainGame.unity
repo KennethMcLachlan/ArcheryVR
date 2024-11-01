@@ -123435,6 +123435,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.04
       objectReference: {fileID: 0}
+    - target: {fileID: 1376257379619245393, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403635966935142426, guid: 40e3f82de854b754795184019d7e1c60,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4300055607052973118, guid: 40e3f82de854b754795184019d7e1c60,
         type: 3}
       propertyPath: _arrowPrefab
