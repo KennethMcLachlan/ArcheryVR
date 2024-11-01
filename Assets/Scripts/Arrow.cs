@@ -98,7 +98,7 @@ public class Arrow : MonoBehaviour
                             targetBehavior.TargetHit();
                             hitInfo.rigidbody.useGravity = true;
                             hitInfo.rigidbody.isKinematic = false;
-                            body.AddForce(_rigidbody.velocity, ForceMode.Impulse);
+                            body.AddForce(_rigidbody.velocity * 20, ForceMode.Impulse);
                         }
                     }
                 }

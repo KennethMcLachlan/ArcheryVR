@@ -75,10 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c180dc8b989bbd4fa46b09ef70b06e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12.5
+  speed: 25
   tip: {fileID: 1769337598482281036}
-  _targetBehavior: {fileID: 9196594943534859742, guid: 1ed6259990c518d47ac2cab7f02e775f,
-    type: 3}
   pullInteraction: {fileID: 0}
 --- !u!1 &1769337598482281027
 GameObject:

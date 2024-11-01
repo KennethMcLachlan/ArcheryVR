@@ -158,12 +158,6 @@ public class BombArrow : MonoBehaviour
                         if (pullInteraction != null)
                         {
                             pullInteraction.ReceiveBombInfoTrue();
-
-                            Debug.Log("Called ReceiveBombInfoTrue() from Arrow script");
-                        }
-                        else
-                        {
-                            Debug.LogError("PullInteraction is null in Arrow Script");
                         }
 
                         StartCoroutine(BombDurationRoutine());
@@ -185,12 +179,7 @@ public class BombArrow : MonoBehaviour
                         
                         if (targetProp != null)
                         {
-                            Debug.Log("target was hit by explosion");
                             targetProp.TargetHit();
-                        }
-                        else
-                        {
-                            Debug.Log("Explosion did not affect other targets");
                         }
                     }
                 }

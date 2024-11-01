@@ -235,9 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4937dd172a7e6478648d0596c8f38c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 25
   tip: {fileID: 4263686821020287369}
-  _targetBehavior: {fileID: 0}
   explosiveForce: 2000
   explosiveRadius: 2
   upwardsModifier: 2
@@ -245,6 +244,7 @@ MonoBehaviour:
   _explosionPFX: {fileID: 5886721146371226218, guid: 8225af15c8943004782809cc51925d52,
     type: 3}
   _explosionSFX: {fileID: 0}
+  _targetBehavior: {fileID: 0}
   pullInteraction: {fileID: 0}
 --- !u!82 &5814437216972365880
 AudioSource:
